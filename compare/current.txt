@@ -1,0 +1,1044 @@
+The Method of Articial Systems
+Christopher A. Tucker
+
+cartheur@pm.me
+
+ORCID: 0000-0002-0172-7258
+
+Abstract
+Articial life is embodied AI. It becomes buildable when hardware
+and software are tightly coupled, behavior is kept compact, process is
+asynchronous and local, memory is held within nodes, communication is
+explicit, and experiment remains reproducible at the board level. Under
+those conditions, synthetic systems can be studied as situated, adaptive
+forms of machine life. Here, it is grounded in the Volatco board experiments as a repeatable demonstration in behavior, coordination, energy,
+and adaptation.
+
+1 Preface
+Articial life is embodied AI. By applying a few architectural rules, including
+tight coupling between hardware and software, compact behavior representations, asynchronous local process, in-node memory words, explicit communication, and reproducible board-level experiment, something living becomes buildable.
+Related works by the same author pursue narrower parts of that program.
+Historical and conceptual lineage is developed elsewhere through studies of symbolic logic, machine control, embodied intelligence, code-level robotic behavior,
+and substrate-oriented architecture.
+
+Those adjacent works matter here only
+
+because they show that the method of articial systems is not a detached philosophical stance, but part of a constructive research line.
+What matters here is method: the vocabulary, design principles, and experimental orientation needed to treat synthetic entities as situated systems rather
+than as incomplete copies of human intelligence.
+The proof path is distributed across the companion papers. The symboliclogic study recovers the architectural claim that sensing, state, control, action,
+and adaptation belong to one machine-intelligence design problem.
+
+Behavior
+
+diagrams extract a compact behavioral vocabulary from preserved robot software.
+
+The hybrid-substrate study carries that vocabulary toward execution
+
+through node-local process, asynchronous communication, boot-time initialization, and functional simulation. Together with the Volatco board experiments,
+those works are used here to demonstrate that articial life is embodied AI,
+where reset conditions, pin maps, watchdog behavior, message hando, power
+draw, and pass/fail criteria can be made explicit and repeated.
+The methodological consequence is direct. Articial systems become more
+intelligible, more designable, and more experimentally productive when they
+
+1
+
+are treated as living technical entities rather than as incomplete imitations of
+the human mind.
+
+The strongest current output of that formulation is not a
+
+generalized robot mythology, but a reproducible board experiment in which
+behavior, coordination, energy, and adaptation can be tested under ordinary
+scientic conditions.
+
+2 Introduction
+The question guiding this work is not merely whether machines can be called
+intelligent. It is whether the dominant conceptual frame for articial intelligence
+has also limited our ability to build and understand articial forms of life. Much
+of the language surrounding AI encourages researchers to judge machines by how
+closely they resemble selective features of human cognition. That orientation has
+produced useful tools, but it has also narrowed the design space. It encourages
+imitation where a more fruitful path may be construction.
+This manuscript takes a dierent position. Machines should not be designed
+primarily as reduced copies of human intelligence, nor should they be forced into
+conceptual models whose assumptions do not t the systems being built. They
+should instead be approached as articial systems: organized entities with their
+own constraints, behaviors, relations to environments, and modes of adaptation.
+Under this view, the task is not to ask whether a machine imperfectly resembles
+a person, but to determine what kinds of autonomy, coordination, and situated
+choice can be engineered into a synthetic entity and how those capacities can
+be studied rigorously.
+The argument developed here is that articial life requires a design methodology centered on context, orchestration, and choice. Context matters because
+no adaptive system can be understood apart from the conditions in which it acts.
+Orchestration matters because complex behavior depends on the coordination
+of heterogeneous physical and abstract components.
+
+Choice matters because
+
+adaptation requires more than reaction; it requires structured discretionary limits within which an entity can generate behavior that is neither wholly xed nor
+wholly arbitrary. These three ideas form the core of the method proposed in
+this work.
+The sibling hybrid-substrate paper sharpens this further by giving those
+ideas an implementation grammar. In that paper, behavior does not remain an
+interpretive diagram. It is treated as something assignable to local nodes, carried by explicit ports, stabilized by node-local memory, and made reproducible
+through declarative initialization. That execution story is the strongest present
+proof that the method proposed here can be realized as embodied articial life
+rather than left at the level of terminology.
+This project has three linked aims. First, it denes a conceptual vocabulary
+adequate to the design of synthetic entities. Second, it proposes a methodological framework for organizing the features, constraints, and interactions that
+make articial systems viable. Third, it identies experimental paths by which
+these ideas can be embodied in robotic and machine-like forms. The aim is not
+to settle every metaphysical question surrounding life or consciousness. It is to
+create a more usable foundation for building and evaluating articial systems
+that exhibit meaningful, adaptable behavior.
+The manuscript also proceeds from a criticism of prevailing AI discourse.
+
+2
+
+The problem is not that all prior work has failed, nor that every existing method
+lacks value. The problem is that many dominant framings make it dicult to
+ask the right design questions.
+
+Systems optimized for symbol manipulation,
+
+benchmark performance, or narrow task success do not by themselves explain
+how to construct articial entities with durable identity, environmental embeddedness, or internally organized behavior. A broader methodology is needed if
+articial life is to become more than a metaphor.
+The method of articial systems answers that need by reordering the language of machine behavior around construction, embodiment, and experiment.
+The sections that follow dene the method, situate it against competing approaches, and carry it toward a reproducible articial-life research program.
+The companion papers carry the path forward. Symbolic logic recovers the
+unity of sensing, state, control, action, and adaptation.
+
+Behavior diagrams
+
+extract a compact diagrammatic vocabulary from preserved robot software.
+Hybrid-substrate carries that vocabulary toward execution through node-local
+process, asynchronous communication, boot-time initialization, and functional
+simulation. This manuscript gathers those threads and uses the Volatco board
+experiments to demonstrate that articial life is embodied AI.
+
+3 Conceptual Foundations
+This section establishes the minimum vocabulary of the method. The purpose
+is not to settle every metaphysical argument about life, but to dene a usable
+language for building and evaluating embodied articial systems in the near
+future.
+
+System. A system is a bounded organization of interacting components
+
+whose relations produce stable or unstable patterns across time. Systems have
+internal states, external interfaces, and operating limits. Their identity is not
+reducible to any single part.
+
+Environment. An environment is the eld of conditions within which a
+
+system must operate. It includes sources of information, barriers, opportunities,
+energetic constraints, hazards, and other entities. Behavior cannot be separated
+from environment because every act occurs under conditions.
+
+Entity. An entity is a system treated as an operative unit within an en-
+
+vironment.
+
+It is the level at which behavior becomes attributable.
+
+A robot,
+
+colony, software agent, or hybrid architecture may count as an entity if it acts
+as a coherent bounded whole.
+
+Feature. A feature is an operative characteristic of a system that can inu-
+
+ence behavior. Features may be physical, computational, relational, energetic,
+or informational. Articial systems do not act through abstractions alone; they
+act through arranged capacities.
+
+Orchestration. Orchestration is the coordination of heterogeneous features
+
+into behaviorally coherent operation. It includes the timing of subroutines, distribution of energy, signal routing, controller relationships, and the harmonization of local actions with system-wide goals. Orchestration is where complexity
+becomes governable.
+
+Choice. Choice is a bounded selection among actionable alternatives under
+
+meaningful conditions.
+
+It is not merely a branch in code.
+
+Choice becomes
+
+methodologically interesting when the alternatives matter to system persistence,
+
+3
+
+behavior quality, or future state formation.
+
+Choice therefore links action to
+
+consequence and consequence to adaptation.
+
+Controller. A controller is any subsystem that inuences transitions, pri-
+
+orities, or constraints within a larger entity.
+
+Controllers may be centralized,
+
+distributed, explicit, or emergent from the interaction of other components.
+The important question is not whether control exists, but how it is organized
+and under what limits it operates.
+
+Autonomy. Autonomy is not absolute independence. It is the capacity
+
+of a system to sustain organized behavior through its own internal processes
+while remaining coupled to an environment. A system may depend on external
+resources and still be autonomous if it governs its conduct rather than being
+continuously driven by an operator.
+
+4 Limits of Dominant AI Approaches
+Articial intelligence has inherited a set of recurring habits of thought.
+
+Ma-
+
+chines are often evaluated according to whether they think like humans, act
+like humans, think rationally, or act rationally.
+
+Each of these categories has
+
+produced valuable work, but each also centers a comparison that can distract
+from the engineering of articial beings. A system may perform brilliantly at
+a task and still tell us very little about what it means for an entity to persist,
+adapt, or coordinate its existence in a world.
+The deeper limitation is methodological. The eld has often treated intelligence as though it were detachable from the conditions that make organized
+behavior possible. This encourages abstraction without sucient embodiment.
+It privileges symbolic performance, prediction, or optimization while leaving
+underdeveloped the question of how an articial entity organizes its own continuity. The result is a family of powerful tools and narrow benchmarks, but an
+incomplete vocabulary for articial life.
+The argument here is not that previous AI work failed absolutely, nor that
+imitation, abstraction, or statistical methods are worthless.
+
+The argument is
+
+that they are insucient as rst principles for machine life. A machine capable
+of winning a game, classifying an image, or optimizing a path is not therefore
+a synthetic organism. Nor does the presence of complex computation settle the
+question of autonomy. Articial life requires a more demanding frame, one that
+includes persistence, vulnerability, adaptation, and the organization of behavior
+across time.
+That is why this work shifts attention from intelligence as isolated capacity
+to systemhood as organized viability.
+
+The forward question is not what past
+
+schools of AI proved once and for all, but what kinds of machines become
+possible if viability, consequence, and coordination are treated as primary design
+targets.
+
+Words. What matters next is not a better slogan for intelligence but a
+
+better language for construction. The terms introduced in this manuscript are
+meant to support future experimental work in robotics, distributed control,
+energy-constrained systems, and adaptive machine behavior. They are not offered as nal metaphysical denitions. They are oered as design terms that
+can travel from theory into implementation.
+
+Use of Prior Work.
+
+The supporting literature is useful only when it
+
+4
+
+sharpens the future task of construction.
+
+The relevant question is not which
+
+author can serve as nal authority on life, mind, or machine intelligence, but
+which concepts help dene better experiments and stronger technical criteria
+for articial systems.
+
+Living Systems. The unavoidable question is not simply what is life? but
+
+what minimal conditions make an articial entity behave as though continued
+operation matters.
+
+For the purposes of this project, the most useful imports
+
+from the living-systems literature are not biological analogies as such, but three
+engineering pressures: persistence, regulation, and degradation.
+Persistence matters because an articial system that cannot meaningfully
+continue or fail is dicult to study as an adaptive entity.
+
+Regulation mat-
+
+ters because organized behavior depends on internal balance under disturbance.
+Degradation matters because systems exposed to consequence must manage loss,
+exhaustion, or instability rather than merely executing cost-free actions.
+These pressures can be translated into future machine design without requiring that an articial entity duplicate organic life. The design question is therefore practical: how can a synthetic system be built so that maintaining workable
+state, managing energy, and coordinating action under constraint become experimentally visible features of its operation? That is the use of living-systems
+thought here.
+
+Epistemology. Epistemology matters here because the project depends
+
+on a disciplined way of moving from concept to experiment.
+
+Without that
+
+discipline, the eld drifts between simulation and realization, metaphor and
+construction, performance and persistence.
+
+The useful question is therefore
+
+not merely what machines can appear to do, but what kinds of claims a given
+experiment actually licenses.
+The method of articial systems treats this as a design problem.
+
+Experi-
+
+ments should be chosen so that the relation between system state, environmental
+condition, action, and consequence can be observed rather than merely asserted.
+A strong experiment in this framework does not need to prove consciousness. It
+needs to show that the entity's behavior changes under consequential constraints
+and that those changes are not trivial artifacts of external scripting.
+This is why the manuscript favors architectures that expose feedback, state
+transition, energetic dependence, and changing operational limits. These make
+adaptation legible. They help turn philosophical questions about articial life
+into engineering questions with measurable consequences.
+
+Models for Consideration. The models that matter most for this manuscript
+
+are those that can be turned into executable architecture. A useful model is one
+that makes clearer how a system should be built, what should be measured,
+where failure should be introduced, and how behavior should be observed.
+This shifts the role of reference papers.
+
+They are not present chiey to
+
+authorize the project through historical analogy. They are present to help isolate
+technical patterns that remain productive: closed feedback loops, state-governed
+transitions, distributed coordination, self-maintenance, and behavior emerging
+from structured constraints.
+The central test for any model in this manuscript is therefore forward-facing:
+does it help specify a better articial entity than would otherwise be built? If
+not, it is background rather than method.
+
+Practical Conclusion. The practical conclusion of this section is simple.
+
+The future of articial life will depend less on whether machines imitate their
+
+5
+
+biological counterparts in appearance and more on whether they can sustain
+coherent behavior under consequential conditions. What matters is the design
+of entities that coordinate features, manage limited resources, adapt under pressure, and generate behavior that remains intelligible at the level of the whole
+system.
+That is the threshold from which the method of articial systems begins.
+
+5 The Method of Articial Systems
+Articial systems become scientically interesting when choice is tied to consequence under material constraint. If a machine must select among alternatives
+while exposed to energy limits, environmental pressure, and state-dependent
+outcomes, then emergent behavior can be studied as an engineering result rather
+than as a purely theoretical hope.
+
+Method of Expression. The method of articial systems is built on a
+
+simple premise: if we want articial life, we must design systems whose behavior is shaped by consequence.
+alternatives, and stakes.
+
+That means the entity must have constraints,
+
+It must not merely run.
+
+It must negotiate.
+
+In the
+
+strongest formulation of this manuscript, such negotiation belongs to an embodied AI architecture in which behavior is dened through asynchronous process and retained locally through in-node memory words. The hybrid-substrate
+paper is important because it turns that sentence from manifesto language into
+an implementation hypothesis with explicit node, port, memory, and loading
+obligations.
+
+The Choice Methodology. Choice is central because it links system ar-
+
+chitecture to consequential behavior. A choice is not simply a branch in code.
+It is a bounded selection among actionable alternatives under meaningful conditions. What matters is that the alternatives carry dierent consequences for
+persistence, behavior quality, or future state formation.
+The method therefore treats choice as a structure of bounded consequence
+rather than as an appeal to mystery.
+
+A machine need not duplicate human
+
+interiority to make scientically interesting choices.
+
+It need only operate in
+
+circumstances where alternative actions alter later possibilities in non-trivial
+ways.
+
+The Choice Complex. Choice is most productively studied as part of a
+
+larger system complex. It is not enough to isolate a single decision point and
+treat it as the whole problem.
+
+The machine must be embedded in a loop of
+
+perception, evaluation, action, and consequence. A useful analytic sequence is:
+data → information → evaluation → decision → action → consequence → updated state
+What matters in this sequence is its closure. Consequences must alter later
+possibilities. Once that closure is present, choice can be observed as a feature
+of system organization rather than as a decorative metaphor.
+The choice complex is the minimum arrangement necessary to make choice
+consequential.
+
+It requires a system state that can vary, more than one ac-
+
+tionable alternative, an environment that changes in response to action, and
+consequences that feed back into later decisions.
+
+6
+
+Architecture and Design. Architecturally, the project favors systems that
+can expose internal state, environmental coupling, and behavioral consequence
+clearly enough to support experiment.
+
+That means sensing, control, energy
+
+management, memory, actuation, and state transition should be treated as explicit parts of one organized whole rather than as isolated modules assembled
+without a unifying theory.
+This is also the point at which the companion works become decisive. The
+symbolic-logic study claries how machine organization can be expressed formally, while behavior diagrams show how behavior can be decomposed into
+asynchronous stateful processes.
+
+The hybrid-substrate study adds the proof
+
+layer by showing a continuous path from behavior description to distributed executable realization. Together they support the present claim that articial life
+should be engineered as embodied AI with local memory-bearing nodes rather
+than as a centralized disembodied intelligence.
+The near-term design goals are therefore practical:
+1. build systems capable of sustained autonomous operation under bounded
+resource conditions,
+2. situate them in environments where behavior can be perturbed and measured,
+3. give them behavioral repertoires that must be selected under consequence,
+4. preserve enough observability to compare system state before and after
+interaction.
+
+Automata and Agents. Automata and agent abstractions remain useful
+because they oer structured ways to express states, transitions, priorities, monitoring, and action selection. Their value here is not doctrinal. It is operational.
+They make it easier to map theory into executable organization and to inspect
+behavior when the system is under stress.
+Agent-style components are especially useful when treated as mediators
+among sensing, evaluation, and eectors rather than as free-oating software
+metaphors. Their role is to preserve robustness, local decision quality, and interpretability inside a larger articial entity.
+
+Core Problems. The practical problems that organize the method are:
+
+1. The Problem of Energy
+2. The Problem of Communication
+3. The Problem of Coordination (Control)
+4. The Problem of Raw Materials (Construction and Reproduction)
+These are not merely implementation details.
+
+They are the conditions under
+
+which articial systems become viable or fail. Any future program in articial
+life that neglects one of them risks producing impressive demonstrations without
+durable entities.
+
+Orchestration as an Organizing Principle. Orchestration extends the
+
+method from single entities to coordinated assemblies.
+
+Many technical sys-
+
+tems now operate not as isolated machines but as distributed constellations
+
+7
+
+of controllers, mobile units, sensors, relays, and shared resources. This makes
+orchestration more than a metaphor. It becomes a general design principle.
+
+Orchestration Dened. In this framework, orchestration includes the dis-
+
+tribution of both information and energy. That second term is crucial. Most
+discussions of multi-agent coordination concentrate on communication, task allocation, or planning. This work argues that energetic distribution is equally
+fundamental.
+
+A colony of machines that must obtain, allocate, or negotiate
+
+access to power is closer to the realities of articial life than a colony treated as
+computationally animated but materially exempt.
+The queen-drone model explored in this manuscript is important for that
+reason. Whatever form the nal engineering implementation takes, the conceptual insight is strong: centralized and mobile elements can be studied not merely
+as command relations, but as dynamic systems of dependence, signaling, and
+regulated support. This creates a path for investigating cooperative behavior,
+hierarchy, relay, and environmental range within one shared framework.
+Orchestration in this unique instance takes the form exhibited in the following gure:
+
+Figure 1: An Orchestrated Robotic Network
+
+Such a system should be read analytically rather than heroically. Its value
+lies in making allocation, coordination, and dependence visible enough to measure, perturb, and reproduce.
+
+Choice in Runtime. Choice becomes sharper in an orchestrated system
+
+because the meaning of a decision is not contained within one node alone. A
+local decision can change global allocation, system range, energy availability,
+and future state formation across the colony. Orchestration therefore makes it
+possible to study local and global behavior together.
+
+Choice Features. The relevant features for choice in a distributed system
+
+are actionable alternatives, meaningful constraints, state visibility, and consequences that propagate beyond the local node. The future engineering task is
+to make those features measurable in hardware and software rather than merely
+naming them.
+
+Choice Quantication. To quantify choice, the system must exhibit at
+
+least two operationally dierent pathways under conditions that matter. Those
+
+8
+
+pathways must be selectable in relation to internal and external state, and their
+results must feed back into later behavior. The aim is not to quantify free will
+in the metaphysical sense. It is to quantify consequential selection in a machine
+architecture.
+This is one reason orchestration is so useful. Distributed systems make it
+easier to study how one decision inuences many later possibilities.
+
+They do
+
+not solve the problem automatically, but they widen the experimental surface
+on which adaptive behavior can be observed.
+
+Why Orchestration Exposes the Limits of AI. Orchestration makes
+
+visible why the older AI categories are too narrow for this project. A distributed
+articial entity is not interesting primarily because it thinks or acts in a humanlike way. It is interesting because it coordinates, persists, allocates, adapts, and
+remains behaviorally coherent under changing conditions. That is the level at
+which articial life becomes experimentally serious.
+
+6 Embodiment and Experiment
+If the theory is to matter, it must be testable. The method of articial systems
+therefore favors experiments in which abstract claims are forced into contact
+with engineering realities. The purpose of this section is not merely to describe
+prototypes, but to show how an articial entity can be placed under conditions
+where energy, control, coordination, and consequence become experimentally
+visible.
+
+In the present state of the work, one current empirical center is the
+
+Volatco board experiment: an asynchronous multi-node platform where development access, watchdog control, node communication, power measurement,
+and reproducible startup conditions can all be specied in laboratory form.
+
+Featured Power. A featured-power arrangement remains useful here only
+
+as a supporting example of consequential machine behavior. It gives an articial
+system a structured relation to power so that continued operation depends on
+successful regulation rather than on constant external provision. In that narrower sense, energy is not merely a utility service. It is part of the behavioral
+problem.
+The essential point is simple.
+
+Dierent operational states of the machine
+
+require dierent levels of available power.
+
+If the system can detect its state,
+
+estimate its needs, and request or conserve power accordingly, then its choices
+become materially signicant. Failure to regulate well has consequences. Success preserves viability. That is the part of featured power that still belongs in
+this manuscript.
+
+9
+
+Figure 2: Featured Power
+
+The sketch represents operational power states that the machine can request
+or receive.
+
+Level A is full function, Level B is reduced activity, and Level C
+
+is a low-power or sleep condition.
+
+The specic values matter less than the
+
+architecture of the choice: the system is not simply on or o, but capable of
+moving among energy states with dierent behavioral consequences.
+At the simplest level, the power relation can still be expressed as:
+
+Ps = ExI
+
+(1)
+
+What survives from the earlier featured-power work is not a commitment
+to a specic transmission scheme, waveform table, or carrier choice. It is the
+methodological lesson that power can be made stateful, graded, and behaviorally
+consequential.
+
+That lesson can now be carried more cleanly by the Volatco-
+
+centered experiments than by preserving a larger legacy power architecture here.
+
+Platforms Under Test. The design goal is not to bind the method to a
+
+single robot body. The stronger ambition is to develop an experimental pattern
+that can be adapted across multiple machine forms. That means distinguishing
+between general platform requirements and component-specic tests.
+
+In that
+
+spirit there are two broad categories of target:
+1. Generalized platforms,
+2. Specic components (hardware and software).
+What matters most is that the platform exposes enough state to observe
+behavior under consequence. The project does not need to settle large metaphysical questions in order to be useful. It needs to produce machines whose regulation, failure, recovery, and adaptation can be studied without hand-waving.
+
+Robotic Software Abstractions. Software matters here because it is
+
+where system state, decision logic, and behavioral coordination become inspectable. The aim is not software abstraction for its own sake, but software
+architecture that makes adaptation legible and implementable.
+
+Software Architecture for Interactive Machines. The software paradigm
+
+proposed here is modular and domain-oriented. Its purpose is to preserve explicit mappings among sensing, evaluation, state change, power condition, and
+action. Whether realized as a domain-specic language, a layered control stack,
+
+10
+
+or a library architecture, the important feature is that behavior remains organized around consequential transitions rather than opaque monolithic execution.
+
+Useful Abstractions. The most useful abstractions are those that report
+
+and regulate internal state: automata-style transitions, monitoring agents, error
+recovery, power-state management, and interfaces between sensors and eectors.
+These are valuable because they produce scientic data while the system is
+operating, degrading, or recovering.
+
+Autonomy and Long-Term Behavior. Autonomy remains central be-
+
+cause long-term machine behavior cannot be studied seriously if every signicant
+correction is supplied by an operator. The more the system can regulate its own
+conduct under constraint, the more meaningful its experimental behavior becomes.
+
+The Entropic Circuit. The entropic circuit is one of the clearest examples
+
+of how this manuscript turns theory into apparatus. Its purpose is to expose
+the machine to decline in a controlled form.
+
+If the system does not regulate
+
+its power relation successfully, it loses continuity. If it loses continuity, it loses
+operational state.
+
+This is not life in the full philosophical sense, but it is a
+
+concrete and testable relation between choice, constraint, and persistence.
+That is why the circuit matters.
+engineering pressure.
+
+It converts entropy from metaphor into
+
+It gives the machine something to manage that aects
+
+what it can become next.
+
+Figure 3: The Entropic Circuit
+
+Scenario Design. Scenario coding can be understood more simply as the
+deliberate design of behavior-rich situations. Instead of treating code as a at
+list of commands, the project treats it as a structured environment in which
+sensing, timing, memory, and action can be staged together. Its future value
+lies in designing experiments whose behavioral complexity can scale without
+dissolving into chaos.
+
+11
+
+7 Results and Interpretive Discussion
+The earlier concepts matter only if they can be translated into an experimental
+program.
+
+The purpose of this section is therefore direct:
+
+to show how the
+
+method of articial systems can be evaluated through measurable apparatus,
+software structure, and staged trials. At present, that evaluation is especially
+clear when anchored to the Volatco board as a reproducible substrate rather
+than to speculative future robot generalities.
+Measurement and comparison matter only when they help compare real
+operating conditions. Geometry, control, electromagnetics, software structure,
+and behavioral evaluation enter the manuscript only to the extent that they
+produce quantities that can be measured, compared, and rerun under constraint.
+The setup that matters most in the present manuscript is the Volatco board
+environment, because it combines asynchronous node execution with explicit
+development and measurement hooks. The methodological requirements carried
+forward from earlier measurement work are the following:
+
+
+
+
+
+a stable signal source over the target operating band,
+impedance measurement for tuned components,
+spectral analysis for verifying transmitted and received behavior.
+
+Calibration remains essential.
+
+Measured eects must be attributable to the
+
+system under test rather than to unexamined laboratory artifacts. The same
+discipline now applies to the Volatco board: reset mode, boot mode, watchdog
+state, serial programming path, pin assignment, and power-measurement points
+must all be recorded explicitly so that an experiment can be rerun by another
+researcher under substantially the same conditions.
+Simulation remains useful, but it is now secondary to the board-level experiments.
+
+Its role is to help narrow search spaces, expose likely failure regions,
+
+and generate testable expectations before hardware is reworked. It should not
+be mistaken for the principal evidence of the manifesto.
+The older coupled transmission model is therefore retained only as a background example of how geometry, receiver posture, and eld behavior can be explored before fabrication. Its continuing value is heuristic rather than decisive.
+Even supportive models must be tied back to explicit material and electrical
+characteristics if they are to inform experiment at all.
+Controllers are where the energetic, perceptual, and behavioral layers meet.
+A future articial-life platform should therefore treat controllers as explicit objects of design rather than incidental code surrounding the hardware.
+Virtual controllers matter because they let us prototype choice, orchestration, and sensor fusion before committing to a specic body. The exact software
+stack will change over time, but the principle remains: embodied intelligence
+benets from a simulation layer in which sensing, actuation, timing, and environmental perturbation can be inspected under controlled conditions.
+In such an environment, a robot can be subjected to controlled gravity, lighting, friction, clutter, and timing conditions while its controllers are instrumented
+in detail. The larger point is simple: virtual environments provide a disciplined
+route from conceptual manifesto to testable architecture.
+An agent in this document is not a metaphysical claim; it is a software entity
+with bounded responsibilities, observable state, and eectors through which it
+
+12
+
+acts on the rest of the system.
+
+Eectors are therefore the practical bridge
+
+between internal evaluation and external consequence. Treating them explicitly
+allows the architecture to compare what was intended, what was executed, and
+what actually happened in the environment.
+The choice complex is the experimental heart of the manifesto. Its purpose
+is to create circumstances under which a machine must regulate its own continuation under bounded energetic conditions and must do so through interpretable
+software and hardware structures. The Featured Power Environment (FPE) is
+one such apparatus.
+
+It links wireless power, state monitoring, signaling, and
+
+graded operating modes so that the machine's decisions can be studied as consequential responses rather than as disembodied classication outputs. In the
+current research program, the importance of that apparatus is not as a nished
+destination, but as a way of making state, support, and consequence explicit
+enough to migrate into a more reproducible board-level setting.
+The immediate experimental objective is to distinguish operating regimes
+A, B, and C and their corresponding signaling forms L, V, and X. The larger
+point is not the labels themselves, but the requirement that state, need, and
+response be made explicit enough to measure. Future variants may use dierent
+signaling schemes, but the essential idea is stable: the machine must detect its
+state, communicate its need, and alter its behavior according to the availability
+of support.
+The transmitting array names the infrastructure side of the choice problem.
+In the legacy apparatus it held the larger energetic reserve, interpreted requests
+from the eld, and allocated power according to explicit operating modes. In the
+current program, the same analytical role survives in more general form: some
+part of the system must regulate support rather than treat it as a constant
+background condition.
+The receiving array names the embodied side of the same problem. It experiences the eld locally, stores or spends received power, and reports conditions
+that matter to continued operation.
+
+In the Volatco-centered program, these
+
+functions should increasingly migrate toward node-local state, local signaling,
+and observable recovery rather than remain attached to an older receiver architecture.
+To engage the model, a feedback relationship is established between stored
+energy, observed load, and outgoing request signals. A sensor placed between
+the storage system and the feed-through line monitors state in the Entropic
+Circuit. The controller then transforms that state into one of three signaling
+variations, X, V, or L, corresponding to dierent operating modes. The details
+may evolve, but the design principle is consistent with the method of articial
+systems: consequence must be encoded, transmitted, and acted upon in a way
+that remains inspectable.
+The experiment should be understood as a staged validation program for
+the choice methodology rather than a single decisive demonstration.
+
+
+
+
+
+Dene a small node set with explicit behavior assignments.
+Specify boot, reset, watchdog, and communication conditions before execution.
+Record power, latency, state transition, and recovery behavior during the
+run.
+
+13
+
+
+
+
+
+Preserve the exact saved program or image used to produce the result.
+Rerun the same trial under the same stated conditions.
+Publish discrepancies as well as successes.
+
+The duration matters less than the sequence. Each stage should produce artifacts that can be repeated, criticized, and extended by later work.
+The exact hardware can change across implementations, but three requirements remain xed: the source must be stable enough to characterize, the system under test must be observable enough to debug, and the measurement chain
+must be calibrated well enough that relative comparisons are trustworthy.
+Initial trials can be performed at a modest xed separation, followed by
+distance and orientation sweeps.
+
+All tests should preserve logs, photographs,
+
+and waveform captures so that the behavioral conclusions remain tied to physical
+evidence.
+The software experiment begins with data organization.
+
+A machine that
+
+must preserve itself needs a usable memory of power states, requests, outcomes,
+timing, and environmental context. A relational database is one practical way
+to structure that memory, though the larger point is architectural rather than
+vendor-specic: the system must store enough state to compare present need
+against prior consequence.
+The experiment should therefore evaluate not only whether signals are transmitted, but whether the software can query, summarize, and act on their history
+in time to preserve continued operation.
+
+This is where articial life becomes
+
+more than control theory alone. The machine is not merely regulating voltage;
+it is organizing experience into future behavior.
+The most useful anticipated conclusion is modest and strong at the same
+time: articial experience can be studied as the accumulation of bounded consequential selections. A machine that repeatedly interprets data, organizes it,
+selects among constrained options, and acts under penalty will exhibit a pattern
+of behavior that can be measured and compared. In functional terms, the ow
+remains:
+data
+
+
+
+information
+
+
+
+knowledge
+
+
+
+decision
+
+The signicance of this ow is not rhetorical.
+
+
+
+action
+
+It gives the manuscript a con-
+
+crete engineering target: build systems in which data becomes usable knowledge
+quickly enough to alter action before failure occurs. The machine therefore requires a data management system, a control layer, and an environment in which
+better and worse decisions carry dierent consequences.
+There are really two coupled experiments to consider: the energetic infrastructure that makes persistence measurable, and the embodied behavioral platform on which choice can be studied empirically.
+
+In the current state of the
+
+work, the second is best developed on the Volatco board rather than on a generic
+classroom robot. The reason is methodological. The board exposes the exact
+elements the manifesto cares about: asynchronous local processes, node-local
+memory, explicit communication paths, watchdog-protected persistence, and
+measurable power behavior.
+That makes the immediate research program more reproducible than a vague
+appeal to future robotics.
+
+A minimal experiment can dene a signal path,
+
+assign behavior to a small set of nodes, specify boot and reset conditions, state
+
+14
+
+measurable pass/fail criteria, and record power, latency, and recovery behavior
+alongside the saved polyForth program used to produce the result.
+
+This is
+
+ordinary scientic practice: the experiment is not merely declared; it is specied
+so that it can be rerun.
+The simplest meaningful tasks in that environment are correspondingly modest.
+
+One can implement an event-driven sensing loop, a two-node message
+
+hando, a watchdog recovery routine, or a power audit across idle and active
+conditions.
+
+Each of these tasks keeps the manifesto attached to observable
+
+architecture.
+
+Each asks whether behavior-dened asynchronous process with
+
+in-node memory words can be made explicit, measurable, and reproducible on
+the board.
+The components presented here point toward a concrete research agenda:
+1. New software forms organized around consequence rather than passive
+prediction,
+2. New hardware forms built to expose energy, state, and dependence,
+3. Shared research platforms that connect laboratory robotics, adaptive control, and articial life,
+4. A clearer path toward machines that are interpretable because their survival logic is made explicit.
+These directions point toward a future research agenda rather than a nal doctrine. If increasingly complex machines are to display emergent organization,
+then the most productive next step is not to argue prematurely about consciousness but to construct systems in which preservation, depletion, preference, and
+adaptation can be observed under controlled tension.
+
+Entropy, scarcity, and
+
+dependence are therefore not side issues. They are the very conditions through
+which richer synthetic behavior may become legible.
+
+8 Implications and Conclusion
+The implications of this work are broader than any single transmitter, robot,
+or software stack.
+
+Its strongest claim is methodological: future embodied AI
+
+systems should be built around explicit dependencies rather than around the
+ction of unlimited compute, unlimited power, or context-free reasoning.
+Even so, the present manifesto is strongest where it stays close to its current
+experimental output. That output is not a nal universal robot architecture. It
+is a reproducible research path in which the Volatco board serves as one concrete
+asynchronous substrate for studying behavior, memory, communication, reset
+discipline, and power-aware control under laboratory conditions.
+What this manifesto argues, in condensed form, is the following:
+
+
+
+
+
+embodied intelligence should be studied under real energetic and environmental constraints,
+orchestration is a rst-class architectural principle for articial life,
+choice becomes scientically useful when it is tied to measurable consequence,
+
+15
+
+
+
+
+
+
+articial life in this research program is best treated as embodied AI with
+behavior-dened asynchronous process and in-node memory words,
+the proof of that claim is architectural: symbolic organization, behavioral
+decomposition, and hybrid substrate execution together establish the research program,
+future progress depends on experimental systems that unify hardware,
+software, and environment instead of isolating them,
+the path forward is constructive: build platforms that let these claims be
+tested, criticized, and improved.
+
+These claims narrow the agenda rather than enlarge it. The next stage of
+the work is to rene them through reproducible experiments that make behavior, state, communication, and energetic dependence visible under controlled
+conditions.
+
+9 Appendix: Volatco Experimental Program
+This appendix is reserved for the current experimental substrate of the manifesto:
+
+the Volatco asynchronous computing platform.
+
+Its purpose is not to
+
+reopen older speculative roadmaps, replica schemes, or generalized design inventories.
+
+Its purpose is to show, as plainly as possible, how articial life is
+
+embodied AI and how another researcher could reproduce or challenge that
+demonstration in laboratory conditions.
+The main body of this manuscript argues that articial life in this research
+program should be treated as embodied AI with behavior-dened asynchronous
+process and in-node memory words. The appendix belongs to Volatco because
+the board is one current place where that claim can be made concrete.
+
+It
+
+provides many-node execution, node-local state, explicit communication paths,
+watchdog supervision, controlled startup behavior, and inspectable power use
+in one bounded laboratory object.
+That makes the board more than an implementation convenience. It is the
+present demonstration substrate of the manifesto. If the manuscript is to stand
+as more than philosophical preference, it must end near the apparatus through
+which articial life is embodied AI can actually be tested.
+The Volatco appendix should be read as a statement of experimental discipline. Any serious trial on the board should preserve at least the following:
+1. board identity and revision,
+2. node allocation and role assignment,
+3. boot mode and reset conditions,
+4. watchdog conguration and recovery expectations,
+5. pin map and communication path denitions,
+6. power source, measurement points, and load conditions,
+7. the exact saved polyForth program or image used in the run,
+
+16
+
+8. pass/fail criteria stated before execution,
+9. logs for latency, state transition, recovery, and energy behavior.
+These are not procedural niceties.
+
+They are the minimum conditions under
+
+which a claim about embodied behavior can become reproducible rather than
+anecdotal.
+The rst experiments need not be grand. They need to be decisive enough
+to show whether the architecture carries the behavior the manifesto assigns to
+it. A minimal sequence would include:
+1. a single-node event loop with persistent local state,
+2. a two-node message hando with explicit timing and acknowledgement,
+3. a watchdog interruption and recovery routine,
+4. a power comparison between idle, active, and recovery states,
+5. a reset-and-rerun protocol conrming that the same program yields the
+same measurable outcome.
+Each experiment isolates one architectural obligation while remaining small
+enough to debug honestly. Together they test whether asynchronous local process, node-local memory, and explicit consequence can be made visible on the
+board.
+For the purposes of this manifesto, evidence should be ordinary and inspectable. A valid experimental claim should be accompanied by saved source,
+initialization conditions, node assignments, timing records, power measurements,
+and a short statement of what changed between runs. If a behavior appears only
+once, cannot survive reset, or depends on undocumented operator intervention,
+it should not yet be treated as evidence for articial life.
+This standard is intentionally conservative. Its purpose is to give the eld a
+repeatable path from conceptual claim to bounded technical result.
+If the minimal experiments succeed, the next step is not to jump immediately
+to anthropomorphic robotics. The next step is to scale the same discipline across
+more nodes, richer message structures, stronger recovery behavior, and tighter
+power accounting.
+
+The research path proceeds by controlled extension: rst
+
+local persistence, then multi-node coordination, then stateful recovery, then
+larger orchestration problems in which local choices alter colony-level behavior.
+Under that sequence, Volatco does not function as a detour from articial
+life. It functions as the current scientic instrument through which articial life
+can be argued, measured, and revised.
+
+Epilogue
+The older lineage behind this manifesto deserves explicit acknowledgement without being turned into review literature. Grey Walter established an early and
+durable priority for embodied machine behavior, and Owen Holland's later recovery of that line helped keep the problem of situated articial agency in view.
+Holland and McFarland also deserve acknowledgement for giving articial ethology a clear programmatic form, while Rodney Brooks helped keep attention on
+
+17
+
+the problem of building materially embodied, behavior-producing systems across
+the boundary between articial intelligence and articial life. Ross Ashby remains central for priority on regulation, stability under disturbance, and adaptive organization as a state problem.
+Several other works mark important boundaries of the design space addressed here. Abraham Maslow is acknowledged for foregrounding motivation,
+growth, and self-actualization as organized features of behavior; Melissa Bateson, Susan Healy, and T. Andrew Hurly for showing that choice under constraint
+can be studied behaviorally; and Giovanni Stanghellini for treating disembodiment as a serious phenomenological problem rather than a neutral condition
+of existence.
+
+Isaac Asimov is acknowledged not as a scientic source but for
+
+priority in dramatizing machine governance and conict as a public conceptual
+problem, while Jean Baudrillard is acknowledged for sharpening questions of
+simulation and representation that any manifesto of articial systems eventually encounters.
+On the constructive side, A. van Deursen is acknowledged for articulating
+the trade between domain-specic languages and frameworks; E. F. Codd for
+the importance of formal data organization; Stephen Kleene, more cautiously,
+for the logical treatment of eective procedure associated with computable description; and John von Neumann for priority on self-reproduction as a design
+problem rather than a mere metaphor. Andre Kurs, Aristeidis Karalis, Robert
+Moatt, J. D. Joannopoulos, Peter Fisher, and Marin Solja£i¢ are acknowledged
+for giving wireless power transfer a modern experimental footing, while Steve
+Grand's published work is acknowledged for keeping open the possibility that
+articial life must be grown through situated adaptive process rather than assembled as static demonstration. The private correspondence is retained here
+as part of the project's own historical record rather than as public literature.
+
+18
+
+
