@@ -74,8 +74,8 @@ study extracts a compact behavioral vocabulary from preserved robot
 software. The hybrid-substrate study then carries that vocabulary toward
 execution by showing how node-local processes, asynchronous communication,
 boot-time initialization, and functional simulation can serve as a
-concrete embodiment path. In the current revision, that path should
-be understood through the Volatco board experiments: not as a product
+concrete embodiment path. In this revision, that path is expressed
+through the Volatco board experiments: not as a product
 claim, but as a board-level scientific setting in which reset conditions,
 pin maps, watchdog behavior, message handoff, power draw, and pass/fail
 criteria can be made explicit and repeated.
@@ -90,7 +90,7 @@ architecture is behavioral rather than merely representational. Asynchronous
 process organizes activity across the system, while in-node memory
 words preserve local state, continuity, and adaptation.
 
-The central claim, then, is not only conceptual but methodological.
+The central claim is therefore not only conceptual but methodological.
 Artificial systems become more intelligible, more designable, and
 more experimentally productive when they are treated as living technical
 entities rather than as incomplete imitations of the human mind. The
@@ -145,7 +145,7 @@ story is the strongest present proof that the method proposed here can
 be realized as embodied artificial life rather than left at the level
 of terminology.
 
-This project has several linked aims. First, it defines a conceptual
+This project has three linked aims. First, it defines a conceptual
 vocabulary adequate to the design of synthetic entities. Second, it
 proposes a methodological framework for organizing the features, constraints,
 and interactions that make artificial systems viable. Third, it identifies
@@ -165,19 +165,17 @@ with durable identity, environmental embeddedness, or internally organized
 behavior. A broader methodology is needed if artificial life is to
 become more than a metaphor.
 
-The method of artificial systems is one answer to that need. It is
-conceptual because it reorders the language in which machine behavior
-is understood. It is practical because it aims toward implementation,
-experiment, and iterative refinement. The sections that follow define
-the method, situate it against competing approaches, and show how
-it can guide the construction of machines whose behavior is more coherently
-aligned with the conditions of artificial life.
+The method of artificial systems answers that need by reordering the
+language of machine behavior around construction, embodiment, and
+experiment. The sections that follow define the method, situate it
+against competing approaches, and carry it toward a reproducible
+artificial-life research program.
 
 \section{Conceptual Foundations}
 
 This section establishes the minimum vocabulary of the method. The
 purpose is not to settle every metaphysical argument about life, but
-to define a usable language for building and evaluating artificial
+to define a usable language for building and evaluating embodied artificial
 systems in the near future.
 
 \subsection{System}
@@ -727,19 +725,18 @@ can scale without dissolving into chaos.
 
 \subsection{Wireless Power: The Queen-Drone Transmission System}
 
-The queen-drone transmission system is best understood as an experimental
-architecture for coupling energy distribution with distributed machine
-behavior. The important claim is not that one specific prototype settles
-the question, but that power distribution can itself become part of
-the behavioral architecture. If that is true, then centralized and
-mobile elements can be studied as one orchestrated system rather than
-as separate engineering problems.
+The queen-drone transmission system is retained here as a background
+architecture for thinking about how energy distribution may become
+part of behavior rather than an external service. Its importance in
+the present manuscript is limited and methodological. It helps name
+the problem of energetic orchestration, but it is no longer the primary
+proof path for the manifesto.
 
-The Model F work remains relevant here because it suggests a path
-for transmitting not only usable power but also structured signaling
-across a shared field. That makes it a plausible basis for future
-colony-scale machines whose viability depends on both energetic and
-informational coordination.
+The stronger current proof path is the Volatco board. The transmission
+work matters mainly because it clarified that support, signaling, and
+local consequence can be treated as one system-level problem. In that
+sense, it survives here as conceptual scaffolding rather than as the
+center of the experimental argument.
 
 \begin{figure}[H]
 \centering
@@ -749,13 +746,12 @@ informational coordination.
 
 \end{figure}
 
-The design intention is straightforward: power a robot whose demands
-rise and fall with its activity, while preserving enough structure
-in the transmission to support differentiated operating states. That
-is why the system moves beyond a simple transmitter-receiver pairing
-toward a more articulated relay architecture. The underlying engineering
-details matter because they determine whether orchestration can be
-material rather than merely conceptual.
+The design intention is straightforward: power a machine whose demands
+rise and fall with activity while preserving enough structure in the
+support channel to distinguish operating states. That general lesson
+still matters. The detailed legacy hardware, however, should now be
+read as exploratory work rather than as the main scientific instrument
+of this manuscript.
 
 The Model 'F' wireless power transmission system is illustrated in
 Figure 6:
@@ -768,8 +764,7 @@ Figure 6:
 
 \end{figure}
 
-And the i-Cybie battery compartment showing the card installed (Figure
-7).
+Figure 7 shows the i-Cybie battery compartment with the card installed.
 
 \begin{figure}[H]
 \centering
@@ -779,33 +774,18 @@ And the i-Cybie battery compartment showing the card installed (Figure
 
 \end{figure}
 
-The original Tesla system transmitted power from transmitter (Tx)
-to receiver (Rx) only. Both systems used rather large spiral coils
-(around 40cm in diameter) and were too large to be hauled around by
-a robot. I understood that if the spiral windings could be tied to
-linear coils, they energy could be transferred at higher power and
-introduced the coil (B) on upward shaft in the center of the spiral
-in agreement with the operational band of the tuned system. This meant
-there was a third component of the design; power would travel in the
-same manner, from spiral A to spiral A\textquoteright , but the magnitude
-of the energy was shifted in phase to an ancillary card onboard the
-i-Cybie (Figure 7). The operational frequency was set to 78MHz, the
-amplitude to 24VAC at .125A, which was enough power to provide 6VDC
-(1.15 to 2.80W converted by external circuitry) necessary for the
-robot\textquoteright s operation. Operational threshold was a maximum
-of 50VAC at 0.06A.
-
-While conducting these experiments, I discovered that the behavior
-of the wave was a function of the space inside the receiver bay and
-not a direct function of the surface of the coil. I had to revisit
-my extrapolation of the theory and take a look at how I was describing
-the geometry of the system architecture.
+The historical experiments established a narrower lesson that remains
+useful: embodied power transfer is strongly shaped by geometry, confinement,
+and receiver posture, not merely by nominal transmitter strength. That
+lesson remains relevant to the manifesto because it reinforces a broader
+claim: embodied systems live inside bounded operating conditions that
+must be measured rather than assumed away.
 
 \subsubsection{The Geometry of the Problem}
 
-The important contribution of this geometry is not the exact legacy
-hardware arrangement but the claim that an embodied power field can
-be treated as a structured operational volume. If a mobile system
+The contribution of this geometry is not the exact legacy hardware
+arrangement but the claim that an embodied power field can be treated
+as a structured operational volume. If a mobile system
 must persist inside a bounded region, then the design task is to describe
 that region in a way that supports measurement, prediction, and control.
 Figure 8 therefore stands as a schematic partition of transmission
@@ -842,166 +822,26 @@ and orientation of surfaces available to couple with the field.
 Each slice is organized by orientation to the planar axes. The purpose
 of the construction is to estimate how much usable interaction surface
 exists within a bounded volume and how that surface changes as geometry,
-spacing, and motion are altered. The following algebraic representation
-is intentionally simple: it is a first design instrument for comparing
-candidate transmission environments rather than a claim of final physical
-completeness.
+spacing, and motion are altered. The algebra used here is intentionally
+simple. It is not a final electromagnetic theory, but a first design
+instrument for comparing candidate transmission environments.
 
 \begin{equation}
 \hat{X}=l(x)\cdot h(y)\cdot w(z)
 \end{equation}
 
-Where:
+In the legacy experiments, simple volumetric and surface counts were
+used to compare candidate geometries and to estimate where coupling
+opportunities and dead zones might arise. Those calculations, along
+with later spiral and waveform sketches, served a limited but useful
+purpose: they constrained design intuition and made range limits visible
+before further hardware work was attempted.
 
-\begin{equation}
-l(x)=4,h(y)=2,w(z)=3
-\end{equation}
-
-Solving this relationship yields a notional volume of 24cm$^{\text{3}}$.
-To estimate the effectiveness of the space as a measure of usable
-charge density, the next step is to calculate the number of non-redundant
-slices in the container:
-
-\begin{equation}
-X_{s}=(l\cdot w)n_{h}+1
-\end{equation}
-
-\begin{equation}
-Y_{s}=(l\cdot h)n_{w}+1
-\end{equation}
-
-\begin{equation}
-Z_{s}=(h\cdot w)n_{l}+1
-\end{equation}
-
-Solving:
-
-\begin{eqnarray*}
-X_{s}=36, & Y_{s}=32, & Z_{s}=30
-\end{eqnarray*}
-
-There are 98 non-redundant two-dimensional surfaces in the container.
-This count can then be combined with an operating potential to create
-a first-order metric for comparing transmission regimes:
-
-\begin{equation}
-\phi_{T}=\frac{\rho}{\psi}[X_{s}+Y_{s}+Z_{s}]
-\end{equation}
-
-Where $\rho$ is measured in volts and $\psi$ a dimensional factor.
-Solving the equation at the potential of the i-Cybie:
-
-\begin{eqnarray*}
-\phi_{T}=588V
-\end{eqnarray*}
-
-The solution is valid only at a fixed point in time. Within the transmission
-environment, the quantity is better treated as time-dependent:
-
-\begin{equation}
-\phi=\frac{\rho}{\psi}\int(X_{s}+Y_{s}+Z_{s})dt
-\end{equation}
-
-Disseminating the planar waves along each of the quantiles aligned
-with the coordinates in the Cartesian system:
-
-\begin{eqnarray*}
-a=\int36x\,dx, & b=\int32y\,dy, & c=\int30z\,dz
-\end{eqnarray*}
-
-Solving:
-
-\begin{eqnarray*}
-a=18x^{2}, & b=16y^{2}, & c=15z^{2}
-\end{eqnarray*}
-
-The purpose of these integrals is not formal elegance but shape discovery:
-they expose the characteristic curvature of the field and suggest
-where coupling opportunities and dead zones may arise.
-
-\begin{figure}[H]
-\includegraphics[scale=0.5]{figures/area_transmitter/f2_files/1-14}
-
-\caption{Mapped Integrals}
-
-\end{figure}
-
-As expected, each solution is parabolic. A polar visualization is
-useful because mobile systems rarely encounter energy as a flat abstraction;
-they encounter it as orientation, angle, offset, and drift. In that
-sense the spiral model is less a historical artifact than a way of
-thinking about how available power is distributed through space:
-
-\begin{figure}[H]
-\includegraphics[scale=0.5]{figures/area_transmitter/f2_files/1-15}
-
-\caption{Characteristic Spiral}
-
-\end{figure}
-
-The field is, of course, more complicated than this picture. Even
-so, a useful embodied system benefits from a characteristic equation
-that constrains design intuition and keeps experiments comparable.
-
-Consider an Archimedean spiral r$_{\text{s}}$ with a number of turns
-\emph{n} where the distance \emph{s} between each of the arcs is constant,
-that is, dependent on some relation of \emph{\ensuremath{\int}n dn}.
-The mean capacitance $\overline{C}$ on the antenna increases with
-\emph{n} as well as the mean impedance $\overline{Z}$ over a nearly
-constant transmission time \emph{t}. The equation governing this system
-is:
-
-\begin{equation}
-r_{s}=\sqrt{t}-t-n
-\end{equation}
-
-The inner radius is given by:
-
-\begin{equation}
-r_{i}=\sqrt{t}-n
-\end{equation}
-
-A more accurate representation of the system, now under governance\footnote{The principle of a functioning dynamic system must obey a core or
-characteristic equation that determines its array of subsequent behaviors.} appears as:
-
-\begin{figure}[H]
-\includegraphics[scale=0.5]{figures/optimizedSpiral}
-
-\caption{Optimized Spiral}
-
-\end{figure}
-
-This resembles the physical windings while also giving the designer
-a compact language for parameter sweeps. A composite solution can
-then be assembled by equating the geometric form to the operating
-potential:
-
-\begin{equation}
-18x^{2}+16y^{2}+15z^{2}=588
-\end{equation}
-
-\begin{figure}[H]
-\includegraphics[scale=0.5]{figures/area_transmitter/f2_files/1-16}
-
-\caption{The Waveform}
-
-\end{figure}
-
-Different stimulus values at the receiving port show that the system
-is susceptible to sharp range limits for differing values of $\phi$.
-
-\begin{figure}[H]
-\includegraphics[scale=0.5]{figures/fsxRange}
-
-\caption{Range Limits}
-
-\end{figure}
-
-This demonstrates that the apparatus is a closed resonant system within
-a constrained bandwidth. For the broader argument of this document,
-that matters because it shows that embodiment is measurable: an artificial
-system does not inhabit an abstract world but a sharply bounded field
-of affordances that can be tuned, modeled, and experimentally stressed.
+For the broader argument of this manuscript, the lasting lesson is
+smaller and stronger than the original derivation. Embodiment is measurable.
+An artificial system does not inhabit an abstract world, but a bounded
+field of affordances whose geometry, support conditions, and failure
+regions can be stressed experimentally.
 
 \subsubsection{The Queen in the Colony}
 
@@ -1036,29 +876,28 @@ the outcomes of many such interpretations over time.
 \section{Results and Interpretive Discussion}
 
 The earlier concepts matter only if they can be translated into an
-experimental program. The concern here is not to defend a finished
-machine, but to show how the method of artificial systems can be evaluated
-through measurable apparatus, software structure, and staged trials.
-At present, that evaluation is most compelling when anchored to the
-Volatco board as a reproducible substrate rather than to speculative
-future robot generalities.
+experimental program. The purpose of this section is therefore direct:
+to show how the method of artificial systems can be evaluated through
+measurable apparatus, software structure, and staged trials. At present,
+that evaluation is most compelling when anchored to the Volatco board
+as a reproducible substrate rather than to speculative future robot
+generalities.
 
 \subsection{Numerical Components of the Theory}
 
-The numerical domains relevant to this work span geometry, control,
-electromagnetics, software structure, and behavioral evaluation. The
-purpose of the mathematics is not ornamental generality. It is to
-create comparable quantities for systems that must negotiate energy,
-distance, latency, state, and bounded consequence while remaining
-operational in a real environment.
+The numerical material in this work matters only when it helps compare
+real operating conditions. Geometry, control, electromagnetics, software
+structure, and behavioral evaluation enter the manuscript only to
+the extent that they produce quantities that can be measured, compared,
+and rerun under constraint.
 
 \subsubsection{Experimental Setup}
 
-The transmitter discussed in §4.3 was analyzed in a controlled experimental
+The transmitter discussed earlier was analyzed in a controlled experimental
 environment designed to support repeatable measurement. In the current
-research sequence, however, the more decisive experimental template
-is the Volatco board environment, because it combines asynchronous
-node execution with explicit development and measurement hooks.
+research sequence, however, the more decisive template is the Volatco
+board environment, because it combines asynchronous node execution
+with explicit development and measurement hooks.
 
 \begin{figure}[H]
 \includegraphics[scale=0.5]{figures/area_transmitter/modelf_files/ExpID}
@@ -1067,110 +906,36 @@ node execution with explicit development and measurement hooks.
 
 \end{figure}
 
-For this class of experiments, the setup should be understood not only
-as a legacy measurement template for the Model 'F' transmission broadcast,
-but as a bridge toward the present board-level substrate experiments.
-The methodological requirements remain the same:
+For present purposes, the setup is best read as a legacy measurement
+template rather than as the main platform of the manuscript. The methodological
+requirements that survive into the board experiments are the following:
 \begin{itemize}
 \item a stable signal source over the target operating band,
 \item impedance measurement for tuned components,
 \item spectral analysis for verifying transmitted and received behavior.
 \end{itemize}
-Calibration remains essential. Cables, connectors, adapters, and terminations
-must be characterized well enough that measured effects can be attributed
+Calibration remains essential. Measured effects must be attributable
 to the system under test rather than to unexamined laboratory artifacts.
-The same scientific discipline now applies to the Volatco board. Reset
-mode, boot mode, watchdog state, serial programming path, pin assignment,
+The same discipline now applies to the Volatco board: reset mode,
+boot mode, watchdog state, serial programming path, pin assignment,
 and power-measurement points must all be recorded explicitly so that
 an experiment can be rerun by another researcher under substantially
 the same conditions.
 
-\subsubsection{COMSOL Multiphysics Modeling}
+\subsubsection{Modeling as Secondary Support}
 
-Simulation is an important companion to embodiment in this program.
-Multiphysics modeling provides a way to explore field geometry, tuning,
-and sensitivity before hardware is rebuilt at full scale. The value
-of simulation here is not to replace the experiment, but to narrow
-the search space, expose likely failure regions, and generate falsifiable
-expectations for physical trials.
+Simulation remains useful, but it is now secondary to the board-level
+experiments. Its role is to help narrow search spaces, expose likely
+failure regions, and generate testable expectations before hardware
+is reworked. It should not be mistaken for the principal evidence
+of the manifesto.
 
-In this project, the relevant modeling problem is a coupled one. The
-proposed Wireless Power for Robot Orchestrated Colonies (WPROC) environment
-asks whether power transmission, receiver morphology, and orchestration
-behavior can be studied within one shared model. The coupled system
-therefore has three parts:
-\begin{itemize}
-\item central transmitting complex (queen),
-\item mobile receiving swarm quad/bipeds (drones),
-\item control and orchestration of power distribution model.
-\end{itemize}
-
-The detailed questions are practical:
-\begin{itemize}
-\item What are the geometries of the system under study?
-\item How can the problem be broken down into manageable experimental units?
-\end{itemize}
-Referring back to Figure 2, in the discussion of orchestration §3.1,
-the description of the system under consideration for multiphysics
-modeling is a cavity-resonant conical transmitter/receiver with an
-extensible conic cap.
-
-The queen is coupled to a collection of autonomous receiving drones.
-In the model, the transmitter geometry and the receiver body geometry
-must be treated together, because receiver posture, conductive surface
-area, and orientation all affect inductive coupling. One design hypothesis
-is that a transformable body can trade mobility for directional reception.
-Another is that a high-capacitance, high-impedance system may extend
-usable range when assisted by relay structures. These are precisely
-the kinds of claims a coupled model should help test before hardware
-is rebuilt.
-
-Model Requirements: An electrically charged conic section powered
-by a single \emph{n} turn Archimedean spiral coil coupled to a linear
-coil (filament) running its length along the z-axis. The spiral\textquoteright s
-outer radius r$_{\text{s}}$, and inner radius r$_{\text{i}}$ are
-arranged such that the radius of the filament r$_{\text{f}}$ with
-length l$_{\text{f}}$, is related to the spiral as: r$_{\text{f}}$
-<\textcompwordmark < r$_{\text{i}}$. At the apex of the filament
-lies a conic section acting as a transmission antenna T$_{\text{a}}$.
-The field is (smoothed / amplified / radiated) by an outer conic section
-T$_{\text{b}}$. Consider the figure:
-
-\begin{figure}[H]
-\includegraphics[scale=0.5]{figures/primitiveModelState}
-
-\caption{Primitive Model State}
-
-\end{figure}
-
-This figure sketches the queen transmitting apparatus. It is not yet
-the finished engineering model, but a functional mock-up derived from
-the conceptual sketch in Figure 2. A more concise model, including
-the capacitance hooks and a more detailed charge distribution, is:
-
-\begin{figure}[H]
-\includegraphics[scale=0.5]{figures/compositeModelState}
-
-\caption{Composite Model State}
-
-\end{figure}
-
-At present, this model is still provisional. Its value lies less in
-its visual completeness than in its role as a scaffold for measurable
-questions. It also has no meaning without an environment, since field
-behavior, range, and coupling depend on the surrounding space in which
-the equations operate.
-
-\begin{figure}[H]
-\includegraphics[scale=0.5]{figures/modelEnvironment}
-
-\caption{Simplified Model in an Environment}
-
-\end{figure}
-
-Figure 19 expresses the core at its limit condition, with the transponder
-at minimum placement and relay positions implied. The next task is
-to add the material and electrical characteristics.
+The older coupled transmission model is therefore retained only as
+a background example of how geometry, receiver posture, and field
+behavior can be explored before fabrication. Its continuing value
+is heuristic rather than decisive. Even supportive models must be
+tied back to explicit material and electrical characteristics if they
+are to inform experiment at all.
 
 \subsection{Controllers}
 
@@ -1197,12 +962,9 @@ Figure 20 illustrates such a workspace.
 
 In such an environment, a robot can be subjected to controlled gravity,
 lighting, friction, clutter, and timing conditions while its controllers
-are instrumented in detail. This makes it possible to ask practical
-questions: what sensor fusion is needed for stable movement, how does
-a controller compensate for slippage or delay, and what variables
-should be exposed to a higher-level orchestration layer? The larger
-point is that virtual environments provide a disciplined route from
-conceptual manifesto to testable architecture.
+are instrumented in detail. The larger point is simple: virtual environments
+provide a disciplined route from conceptual manifesto to testable
+architecture.
 
 \subsubsection{Agents and their Effectors}
 
@@ -1223,34 +985,36 @@ Power Environment (FPE) is one such apparatus. It links wireless power,
 state monitoring, signaling, and graded operating modes so that the
 machine's decisions can be studied as consequential responses rather
 than as disembodied classification outputs.
+In the current research program, the importance of that apparatus is
+not as a finished destination, but as a way of making state, support,
+and consequence explicit enough to migrate into a more reproducible
+board-level setting.
 
 The immediate experimental objective is to distinguish operating regimes
 A, B, and C and their corresponding signaling forms L, V, and X.\footnote{Please refer to Figure 3.}
-To do that, both hardware and software prototypes are needed. The
-hardware establishes energetic reality; the software establishes interpretation,
-policy, and logging. Future variants may use different signaling schemes,
-but the essential idea is stable: the machine must detect its state,
-communicate its need, and alter its behavior according to the availability
-of support.
+The larger point is not the labels themselves, but the requirement
+that state, need, and response be made explicit enough to measure.
+Future variants may use different signaling schemes, but the essential
+idea is stable: the machine must detect its state, communicate its
+need, and alter its behavior according to the availability of support.
 
 \subsubsection{The Transmitting Array (Queen)}
 
-The transmitting array is the infrastructure side of the choice problem.
-It holds the larger energetic reserve, interprets requests from the
-field, and allocates power according to explicit operating modes.
-Its switching logic is important because it turns energy delivery
-into a governed event rather than a constant background condition.
-That governed event is what allows the embodied system to be studied:
-requests can succeed, fail, be delayed, or be downgraded.
+The transmitting array names the infrastructure side of the choice
+problem. In the legacy apparatus it held the larger energetic reserve,
+interpreted requests from the field, and allocated power according
+to explicit operating modes. In the current program, the same analytical
+role survives in more general form: some part of the system must regulate
+support rather than treat it as a constant background condition.
 
 \subsubsection{The Receiving Array (Drone)}
 
-The receiving array is the embodied side of the same problem. It experiences
-the field locally, stores or spends received power, and reports conditions
-that matter to continued operation. In a mature implementation, these
-functions belong on the mobile machine itself. The present architecture
-should therefore be read as a migration path toward local autonomy,
-not as a permanent dependence on an external host.
+The receiving array names the embodied side of the same problem. It
+experiences the field locally, stores or spends received power, and
+reports conditions that matter to continued operation. In the Volatco-centered
+program, these functions should increasingly migrate toward node-local
+state, local signaling, and observable recovery rather than remain
+attached to an older receiver architecture.
 
 \subsubsection{The Software Model}
 
@@ -1269,17 +1033,14 @@ inspectable.
 The experiment should be understood as a staged validation program
 for the choice methodology rather than a single decisive demonstration.
 \begin{itemize}
-\item Construct the data handling structure, layered controller, and distribution
-logic.
-\item Build and instrument a testing environment for Model \textquoteleft F\textquoteright .
-\item Chart the operating band of the transmission system while verifying
-software integrity.
-\item Measure the breadth, clarity, and reliability of transmitted and received
-signals.
-\item Simulate the switching array and the Entropic Circuit before and alongside
-hardware trials.
-\item Compare virtual and physical results and publish the discrepancies as
-well as the successes.
+\item Define a small node set with explicit behavior assignments.
+\item Specify boot, reset, watchdog, and communication conditions before
+execution.
+\item Record power, latency, state transition, and recovery behavior during
+the run.
+\item Preserve the exact saved program or image used to produce the result.
+\item Rerun the same trial under the same stated conditions.
+\item Publish discrepancies as well as successes.
 \end{itemize}
 The duration matters less than the sequence. Each stage should produce
 artifacts that can be repeated, criticized, and extended by later
@@ -1287,9 +1048,8 @@ work.
 
 \subsubsection{The Hardware Experiment}
 
-The hardware experiment begins with a laboratory setup that separates
-the orchestration side from the embodied side while preserving a measurable
-coupling between them:
+The hardware experiment begins with a laboratory setup that preserves
+measurable coupling among support, local state, and observable response:
 
 \begin{figure}[H]
 \includegraphics[scale=0.5]{figures/TheHardwareExperiment}
@@ -1298,27 +1058,25 @@ coupling between them:
 
 \end{figure}
 
-The transmitting programming station simulates the queen by generating
-controlled request and response conditions. The signal analysis station
-simulates the drone and records what the receiving side actually experiences.
 The exact hardware can change across implementations, but three requirements
 remain fixed: the source must be stable enough to characterize, the
-receiver must be observable enough to debug, and the measurement chain
-must be calibrated well enough that relative comparisons are trustworthy.
+system under test must be observable enough to debug, and the measurement
+chain must be calibrated well enough that relative comparisons are
+trustworthy.
 
-Initial trials can be performed at a modest fixed separation such as
-three meters, followed by distance and orientation sweeps. All tests
-should preserve logs, photographs, and waveform captures so that the
-behavioral conclusions remain tied to physical evidence.
+Initial trials can be performed at a modest fixed separation, followed
+by distance and orientation sweeps. All tests should preserve logs,
+photographs, and waveform captures so that the behavioral conclusions
+remain tied to physical evidence.
 
 \subsubsection{The Software Experiment}
 
 The software experiment begins with data organization. A machine that
-must preserve itself needs a usable memory of frequencies, power states,
-requests, outcomes, timing, and environmental context. A relational
-database is one practical way to structure that memory, though the
-larger point is architectural rather than vendor-specific: the system
-must store enough state to compare present need against prior consequence.
+must preserve itself needs a usable memory of power states, requests,
+outcomes, timing, and environmental context. A relational database
+is one practical way to structure that memory, though the larger point
+is architectural rather than vendor-specific: the system must store
+enough state to compare present need against prior consequence.
 
 The experiment should therefore evaluate not only whether signals are
 transmitted, but whether the software can query, summarize, and act
@@ -1332,9 +1090,10 @@ into future behavior.
 The software architecture mirrors the transformation logic of the hardware
 model. A domain-specific layer is useful here because the problem is
 not generic computation; it is the structured interpretation of energetic
-state, requests, and consequences. The governing equation is therefore
-best read as a compact generative core whose parameters can yield different
-runtime objects, tables, channels, and transformations:
+state, requests, and consequences. The governing equation should therefore
+be read modestly: not as a proof by itself, but as a compact generative
+core whose parameters can yield different runtime objects, tables,
+channels, and transformations:
 
 \begin{equation}
 y=\mbox{a cos(t)+b sin(t)}
@@ -1357,7 +1116,7 @@ data sources such as a remote server or computing nexus.
 A further breakdown of how each member fits into the composite schema
 can be seen in Figure 22. Whether the final implementation uses this
 exact arrangement is less important than the principle that governing
-relations should be explicit, inspectable, and extensible.
+relations remain explicit, inspectable, and extensible.
 
 \begin{figure}[H]
 \includegraphics[scale=0.5]{figures/governingEquation}
@@ -1417,8 +1176,7 @@ measurable, and reproducible on the board.
 
 \subsection{Closing Remarks}
 
-Considering the intertwining of the components presented here, what
-lasting directions become visible?
+The components presented here point toward a concrete research agenda:
 \begin{enumerate}
 \item New software forms organized around consequence rather than passive
 prediction,
@@ -1428,8 +1186,8 @@ control, and artificial life,
 \item A clearer path toward machines that are interpretable because their
 survival logic is made explicit.
 \end{enumerate}
-These closing thoughts point toward a future research agenda rather
-than a final doctrine. If increasingly complex machines are to display
+These directions point toward a future research agenda rather than
+a final doctrine. If increasingly complex machines are to display
 emergent organization, then the most productive next step is not to
 argue prematurely about consciousness but to construct systems in
 which preservation, depletion, preference, and adaptation can be observed
@@ -1440,12 +1198,10 @@ synthetic behavior may become legible.
 \section{Implications and Conclusion}
 
 The implications of this work are broader than any single transmitter,
-robot, or software stack. Wireless power is one compelling application
-domain, especially where maintenance, access, or size constraints
-make stored energy a bottleneck. More generally, the work argues that
-future embodied AI systems should be built around explicit dependencies
-rather than around the fiction of unlimited compute, unlimited power,
-or context-free reasoning.
+robot, or software stack. Its strongest claim is methodological: future
+embodied AI systems should be built around explicit dependencies rather
+than around the fiction of unlimited compute, unlimited power, or
+context-free reasoning.
 
 Even so, the present manifesto is strongest where it stays close to
 its current experimental output. That output is not a final universal
@@ -1473,8 +1229,8 @@ software, and environment instead of isolating them,
 be tested, criticized, and improved.
 \end{itemize}
 
-These claims are intended to narrow the agenda, not enlarge it. The
-next stage of the work is to refine them through reproducible experiments
+These claims narrow the agenda rather than enlarge it. The next stage
+of the work is to refine them through reproducible experiments
 that make behavior, state, communication, and energetic dependence
 visible under controlled conditions.
 
@@ -1554,9 +1310,9 @@ runs. If a behavior appears only once, cannot survive reset, or depends
 on undocumented operator intervention, it should not yet be treated
 as evidence for artificial life.
 
-This standard is intentionally conservative. The point is not to make
-the work sound larger than it is. The point is to give the field a
-repeatable path from conceptual claim to bounded technical result.
+This standard is intentionally conservative. Its purpose is to give
+the field a repeatable path from conceptual claim to bounded technical
+result.
 
 \subsection{Scaling Path}
 
@@ -1610,7 +1366,7 @@ Peter Fisher, and Marin Solja\v{c}i\'{c} are acknowledged for giving
 wireless power transfer a modern experimental footing, while Steve
 Grand's published work is acknowledged for keeping open the possibility
 that artificial life must be grown through situated adaptive process
-rather than assembled as static demonstration; the private correspondence
+rather than assembled as static demonstration. The private correspondence
 is retained here as part of the project's own historical record rather
 than as public literature.
 
