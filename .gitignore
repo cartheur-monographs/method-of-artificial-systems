@@ -2,3 +2,14 @@ source/The method of artificial systems.lyx~
 source/The method of artificial systems-lyxformat-508.lyx~
 source/latex/figures/*
 source/nu/The method of artificial systems.lyx~
+
+# Revision TeX build artifacts
+revision/*.aux
+revision/*.fdb_latexmk
+revision/*.fls
+revision/*.lof
+revision/*.log
+revision/*.out
+revision/*.pdf
+revision/*.synctex.gz
+revision/*.toc

@@ -1,5 +1,11 @@
 # Draft Opening
 
+## Note on Scope and Related Works
+
+This manuscript is the conceptual center of a broader body of work on embodied machine intelligence, artificial life, and robotic organization. It is concerned primarily with method: the vocabulary, design principles, and experimental orientation needed to treat synthetic entities as situated systems rather than as incomplete copies of human intelligence.
+
+Adjacent works by the same author pursue narrower parts of that program. Historical and conceptual lineage is developed elsewhere through studies of symbolic logic, machine control, and early embodied intelligence. Robotic behavior and implementation questions are also pursued in companion work through code-level examples and substrate-oriented architecture experiments. Those related projects matter here because they show that the method of artificial systems is not proposed as a detached philosophical stance, but as the conceptual anchor of a constructive research program.
+
 ## Abstract
 
 This work argues that the design of artificial life has been constrained by inherited assumptions about artificial intelligence. Too often, machines are evaluated according to how well they approximate narrow images of human reasoning rather than according to the kinds of autonomous behavior they can sustain in their own right. In response, this manuscript proposes a method of artificial systems: a framework for constructing and studying synthetic entities as bounded, situated, and adaptive systems whose behavior emerges through environmental coupling, feature formation, orchestration, and choice.
