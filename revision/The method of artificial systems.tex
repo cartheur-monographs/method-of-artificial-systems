@@ -15,16 +15,14 @@
 \date{}
 \maketitle
 \begin{abstract}
-This manuscript proposes a method of artificial systems for constructing
-and studying synthetic entities as bounded, situated, and adaptive
-forms of machine life. Read together with the companion studies on
-symbolic logic and AIBO R-CODE, it advances a stronger claim: artificial
-life can be treated as embodied AI whose behavior is organized through
-asynchronous process and stabilized through in-node memory words. In
-its present experimental form, that claim is centered on a reproducible
-board-level research path: the Volatco asynchronous computing platform
-as a test environment for local memory, explicit communication, power-aware
-control, and repeatable embodied experiments.
+Artificial life is embodied AI. By applying a small set of architectural
+rules, including tight coupling between hardware and software, compact
+behavior representations, asynchronous local process, in-node memory
+words, explicit communication, and reproducible board-level experiment,
+synthetic systems can be built and studied as situated, adaptive forms
+of machine life. In this revision, that claim is grounded in the Volatco
+board experiments as a repeatable environment for behavior, coordination,
+energy, and adaptation under ordinary scientific conditions.
 \end{abstract}
 
 \section{Preface}
@@ -37,54 +35,33 @@ living becomes buildable.
 
 Related works by the same author pursue narrower parts of that program.
 Historical and conceptual lineage is developed elsewhere through studies
-of symbolic logic, machine control, and early embodied intelligence.
-Robotic behavior and implementation questions are also pursued in
-companion work through code-level examples and substrate-oriented
-architecture experiments. Those adjacent projects matter here because
-they show that the method of artificial systems is not proposed as
-a detached philosophical stance, but as the conceptual anchor of a
-constructive research program.
+of symbolic logic, machine control, embodied intelligence, code-level
+robotic behavior, and substrate-oriented architecture. Those adjacent
+works matter here only because they show that the method of artificial
+systems is not a detached philosophical stance, but part of a constructive
+research line.
 
-This manuscript is the conceptual center of a broader body of work
-on embodied machine intelligence, artificial life, and robotic organization.
-Its concern is method: the vocabulary, design principles, and experimental
-orientation needed to treat synthetic entities as situated systems
-rather than as incomplete copies of human intelligence.
+What matters here is method: the vocabulary, design principles, and
+experimental orientation needed to treat synthetic entities as situated
+systems rather than as incomplete copies of human intelligence.
 
-The proof burden of this manifesto does not stand alone. It is distributed
-across the sibling papers. The symbolic-logic study recovers the older
-architectural claim that sensing, state, control, action, and adaptation
-belong to one machine-intelligence design problem. The AIBO R-CODE
-study extracts a compact behavioral vocabulary from preserved robot
-software. The hybrid-substrate study then carries that vocabulary toward
-execution by showing how node-local processes, asynchronous communication,
-boot-time initialization, and functional simulation can serve as a
-concrete embodiment path. In this revision, that path is expressed
-through the Volatco board experiments: not as a product
-claim, but as a board-level scientific setting in which reset conditions,
-pin maps, watchdog behavior, message handoff, power draw, and pass/fail
-criteria can be made explicit and repeated.
+The proof path is distributed across the companion papers. The symbolic-logic
+study recovers the architectural claim that sensing, state, control,
+action, and adaptation belong to one machine-intelligence design problem.
+The AIBO R-CODE study extracts a compact behavioral vocabulary from
+preserved robot software. The hybrid-substrate study carries that
+vocabulary toward execution through node-local process, asynchronous
+communication, boot-time initialization, and functional simulation.
+In this manuscript, that path is grounded in the Volatco board experiments,
+where reset conditions, pin maps, watchdog behavior, message handoff,
+power draw, and pass/fail criteria can be made explicit and repeated.
 
-This work argues that artificial life has been constrained by inherited
-assumptions about artificial intelligence. Too often, machines are
-judged by how closely they resemble narrow images of human reasoning
-rather than by the kinds of autonomous behavior they can sustain in
-their own right. The proposed alternative is direct: artificial life
-in this research program should be treated as embodied AI. Its defining
-architecture is behavioral rather than merely representational. Asynchronous
-process organizes activity across the system, while in-node memory
-words preserve local state, continuity, and adaptation.
-
-The central claim is therefore not only conceptual but methodological.
-Artificial systems become more intelligible, more designable, and
-more experimentally productive when they are treated as living technical
-entities rather than as incomplete imitations of the human mind. The
-argument is carried through vocabulary, design principles, and experiments
-in which choice, coordination, energy, and adaptation can be made
-observable. The hybrid-substrate work matters because it supplies
-the first serious implementation proof of that formulation. The strongest
-current output of the program is therefore not a generalized robot
-mythology, but a reproducible board experiment in which these claims
+The methodological consequence is direct. Artificial systems become
+more intelligible, more designable, and more experimentally productive
+when they are treated as living technical entities rather than as
+incomplete imitations of the human mind. The strongest current output
+of that formulation is not a generalized robot mythology, but a reproducible
+board experiment in which behavior, coordination, energy, and adaptation
 can be tested under ordinary scientific conditions.
 
 
@@ -155,6 +132,16 @@ language of machine behavior around construction, embodiment, and
 experiment. The sections that follow define the method, situate it
 against competing approaches, and carry it toward a reproducible
 artificial-life research program.
+
+The supporting path is distributed across the companion papers. The
+symbolic-logic study recovers the architectural unity of sensing,
+state, control, action, and adaptation. The AIBO R-CODE study extracts
+a compact behavioral vocabulary from preserved robot software. The
+hybrid-substrate study carries that vocabulary toward execution through
+node-local process, asynchronous communication, boot-time initialization,
+and functional simulation. The present manuscript gathers those threads
+into a single forward method and grounds them in the Volatco board
+experiments.
 
 \section{Conceptual Foundations}
 
