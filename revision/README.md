@@ -4,6 +4,8 @@ This folder is a separate content-development area for `The Method of Artificial
 
 It does not replace the manuscript source in `source/`. The goal here is to clarify the argument before changing packaging or build layout.
 
+Published release PDFs now sit alongside this workspace as stable reference points, while the materials in `revision/` continue to track the next editorial pass.
+
 Files:
 
 - `content-review.md`: editorial assessment of the current manuscript and its highest-priority content issues.

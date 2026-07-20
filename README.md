@@ -24,6 +24,7 @@ Some parts of the manuscript are archival in tone and reflect the moment in whic
 
 - `source/`: manuscript sources, figures, and export formats
 - `output/`: compiled document outputs
+- `published/`: publication snapshots and release PDFs
 - `literature/`: reference archive and supporting materials
 - `thinkers/`: historical concept documents and related notes
 - `revision/`: current editorial workspace for restructuring and rewriting the manuscript
@@ -42,6 +43,8 @@ In that larger context, `The Method of Artificial Systems` should be read as the
 ## Status
 
 The repository is in active editorial development. The strongest current direction is in `revision/`, where the manuscript is being reshaped into a clearer research monograph with manifesto force.
+
+Publication snapshots are also preserved here. The current published artifacts include `1507.01384v1.pdf` and `1507.01384v2.pdf`, with copies retained under `published/` as reference releases alongside the ongoing revision work.
 
 Recommended reading order:
 
