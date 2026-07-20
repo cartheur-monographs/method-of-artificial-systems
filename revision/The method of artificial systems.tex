@@ -1478,188 +1478,99 @@ next stage of the work is to refine them through reproducible experiments
 that make behavior, state, communication, and energetic dependence
 visible under controlled conditions.
 
-\section{Appendix: Replicas and Plan}
+\section{Appendix: Volatco Experimental Program}
 
-\subsection{Plan Summary}
+\subsection{Purpose of the Appendix}
 
-This appendix serves as a development roadmap for future embodied systems.
-The long-term objective is not a single demonstration, but a family
-of machines that can regulate energy, communicate state, adapt behavior,
-and preserve useful structure over time.
+This appendix is reserved for the current experimental substrate of
+the manifesto: the Volatco asynchronous computing platform. Its purpose
+is not to reopen older speculative roadmaps, replica schemes, or generalized
+design inventories. Its purpose is to state, as plainly as possible,
+what the present research object is, why it matters to the thesis,
+and how another researcher could reproduce or challenge the work under
+ordinary laboratory conditions.
 
-The problem can be organized into four coupled components:
+\subsection{Why Volatco Belongs Here}
+
+The main body of this manuscript argues that artificial life in this
+research program should be treated as embodied AI with behavior-defined
+asynchronous process and in-node memory words. The appendix belongs
+to Volatco because the board is the strongest current place where that
+claim can be made concrete. It provides many-node execution, node-local
+state, explicit communication paths, watchdog supervision, controlled
+startup behavior, and inspectable power use in one bounded laboratory
+object.
+
+That makes the board more than an implementation convenience. It is
+the present experimental center of the manifesto. If the manuscript
+is to stand as more than philosophical preference, it must end near
+the apparatus on which its strongest claims can actually be tested.
+
+\subsection{Experimental Commitments}
+
+The Volatco appendix should be read as a statement of experimental
+discipline. Any serious trial on the board should preserve at least
+the following:
 \begin{enumerate}
-\item Energy,
-\item Communication {[}inner connections; outer cooperation{]},
-\item Control,
-\item Raw Materials.
+\item board identity and revision,
+\item node allocation and role assignment,
+\item boot mode and reset conditions,
+\item watchdog configuration and recovery expectations,
+\item pin map and communication path definitions,
+\item power source, measurement points, and load conditions,
+\item the exact saved polyForth program or image used in the run,
+\item pass/fail criteria stated before execution,
+\item logs for latency, state transition, recovery, and energy behavior.
 \end{enumerate}
-In practice, these components should not be pursued independently.
-Internal process and external support are mutually defining. An embodied
-machine persists only when energetic access, signaling, control, and
-material renewal are treated as one operational system.
+These are not procedural niceties. They are the minimum conditions
+under which a claim about embodied behavior can become reproducible
+rather than anecdotal.
 
-\subsection{Concept}
+\subsection{Minimal Experiments}
 
-In addressing artificial life, the central question remains: what
-properties must an artificial system possess before the language of
-life becomes scientifically useful? A practical starting point is
-the familiar cluster of characteristics often associated with living
-systems: homeostasis, organization, metabolism, growth, response to
-stimuli, adaptation, and reproduction.
-These are useful but still too general. For this manuscript, a narrower
-working definition is more productive. Artificial life should be understood
-as organized matter and code that can sustain itself, interpret conditions,
-and alter its behavior under constraint. A first criterion comes from
-order, disorder, and entropy. This acknowledges Erwin Schr\"odinger's
-priority in framing life through the maintenance of order against equilibrium
-and the practical significance of negative entropy. The following constitute
-\emph{Criteria One}:
+The first experiments need not be grand. They need to be decisive
+enough to show whether the architecture carries the behavior the manifesto
+assigns to it. A minimal sequence would include:
 \begin{enumerate}
-\item Preserve order against disorder: the system must resist collapse by
-remaining sensitive to the costs of instability.
-\item Create order from disorder: the system must act to avoid equilibrium
-by using negative entropy as a practical resource.
-\item Extract order from the environment: the system must consume energy
-or information to sustain its non-permanent state.
+\item a single-node event loop with persistent local state,
+\item a two-node message handoff with explicit timing and acknowledgement,
+\item a watchdog interruption and recovery routine,
+\item a power comparison between idle, active, and recovery states,
+\item a reset-and-rerun protocol confirming that the same program yields
+the same measurable outcome.
 \end{enumerate}
-From that foundation, such a form should:
-\begin{enumerate}
-\item Strive for order based on disorder.
-\item Strive for a successive series of states keeping it distant from equilibrium.
-\item Create its own sense of order by extracting information from its environment.
-\item Replicate its internal mechanisms to facilitate adaptation.
-\item Grow by increasing its composite store of information and improving
-decision-making capacity.
-\item Begin with internal replication in software so the model's adaptive
-potential can be studied before larger physical implementations.
-\end{enumerate}
-The first viable instances should appear through self-construction,
-modification, adaptation, and replication. The emphasis is practical.
-The field moves forward by building systems that can be tested under
-consequence, not by restating philosophical positions without machinery
-attached to them.
+Each experiment isolates one architectural obligation while remaining
+small enough to debug honestly. Together they test whether asynchronous
+local process, node-local memory, and explicit consequence can be
+made visible on the board.
 
-\subsection{First Consideration}
+\subsection{What Counts as Evidence}
 
-Following Criteria One, future work should be organized around four
-features:
-\begin{enumerate}
-\item Self-Construction,
-\item Modification,
-\item Adaptation, and,
-\item Self-Replication.
-\end{enumerate}
-These features should be pursued together. Self-construction and self-replication
-form one half of the larger problem; modification and adaptation form
-the other. Together they define the engine of self-alteration.
+For the purposes of this manifesto, evidence should be ordinary and
+inspectable. A valid experimental claim should be accompanied by saved
+source, initialization conditions, node assignments, timing records,
+power measurements, and a short statement of what changed between
+runs. If a behavior appears only once, cannot survive reset, or depends
+on undocumented operator intervention, it should not yet be treated
+as evidence for artificial life.
 
-Considering the form in context with its environment and moving in
-linear time, the machine must begin somewhere, remain subject to its
-environment, and account for the consequences of its selections if
-it is to persist.
+This standard is intentionally conservative. The point is not to make
+the work sound larger than it is. The point is to give the field a
+repeatable path from conceptual claim to bounded technical result.
 
-\subsubsection{Feature Breakdown}
+\subsection{Scaling Path}
 
-To generate empirical evidence, the next model should meet Criteria
-One directly by exposing self-construction and modification under
-changing conditions. Full physical self-replication is a distant objective,
-but a useful intermediate target is a colony or automated environment
-in which cooperating machines gather energy, process materials, maintain
-one another, and extend their operational capacity with decreasing
-human supervision.
+If the minimal experiments succeed, the next step is not to jump immediately
+to anthropomorphic robotics. The next step is to scale the same discipline
+across more nodes, richer message structures, stronger recovery behavior,
+and tighter power accounting. The research path proceeds by controlled
+extension: first local persistence, then multi-node coordination, then
+stateful recovery, then larger orchestration problems in which local
+choices alter colony-level behavior.
 
-\subsubsection{Computational Environment}
-
-The computational structure of an early system such as \emph{Uhoo}
-can be understood as an algorithm with explicit variables, bounded
-instructions, and a defined operational domain. The future challenge
-is to migrate from a conceptual algorithm to an engineering environment
-that supports simulation, data storage, deployment, reflection, and
-physical testing across multiple robot classes.
-
-The exact stack will evolve, but the requirement is stable: the software
-environment must support portable data models, inspectable control
-logic, reflective transitions, and deployment onto low-cost embodied
-platforms as well as larger distributed systems.
-
-\subsubsection{Prospective Design Sources for Artificial Life}
-
-Useful design sources include experimental architectures that expose
-the coupling between energy, sensing, and control; contemporary artificial-life
-work that privileges adaptation, including Steve Grand's priority on
-grown rather than merely scripted behavior; physical machine platforms
-simple enough to instrument deeply; and philosophy only where it sharpens
-an engineering question, as in Baudrillard's pressure on problems of
-simulation and appearance. These sources matter only insofar as they
-help specify experiments that can be implemented, measured, and revised.
-
-\subsection{Second Consideration}
-
-The second consideration concerns description and construction. A
-system is not alive merely because it contains rules; those rules
-must be implemented in a body, runtime, or colony that can preserve
-their consequences. In engineering terms, this is the problem of turning
-compact representations into stable embodied behavior. This acknowledges
-H. H. Pattee's priority in arguing that artificial life requires a
-real epistemology linking description, symbol, and embodied construction.
-
-\subsection{Third Consideration}
-
-The third consideration concerns the artificial physical world itself.
-Every embodied system inhabits a regime of laws, descriptions, and
-sequences whether virtual or physical. To maintain itself and evolve,
-the organism must implement those descriptions as functioning constructions
-inside that regime rather than merely carry symbolic representations
-of them.
-
-\subsection{Fourth Consideration}
-
-A crucial feature resides in design practice: how features are constructed,
-how they are composed, and how efficiently they can be implemented
-and revised. Particular languages matter less than the discipline
-with which patterns are selected and tested. Reusable structures matter
-because they allow successful solutions to be repeated without reconstructing
-the whole system from first principles. In practice, pattern selection
-should stay close to purpose, interdependence, redesign pressure, and
-the variables that genuinely matter to adaptive behavior.
-The following table condenses those six considerations into a single
-format.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.82\linewidth]{figures/tableOne}
-
-\caption{A Table of Design Patterns}
-
-\end{figure}
-
-The task is to choose, test, and name patterns in ways that keep structure
-clear, implementation disciplined, and complexity proportionate to
-the adaptive problem at hand. Patterns should be rejected whenever
-they add design weight without improving experimental capacity.
-
-\subsubsection{Reflective Programming}
-
-One especially important capability is reflective programming: the
-ability of the system to inspect and, within bounds, rewrite portions
-of its own procedure. This matters only when the resulting changes
-can be validated against consequence, resource usage, and system stability.
-
-\subsection{Machine Outlook}
-
-The machine envisioned by this appendix is not one replica but a class
-of systems. Featured power and choice are only the first experimental
-themes, but they already suggest a broader framework in which embodied
-machines are designed around energetic dependence, structured communication,
-modular control, and the capacity to preserve useful adaptations.
-
-Its value depends on whether the concepts presented here can be carried
-into broader robotic platforms, denser colonies of agents, and richer
-environments in which the costs and rewards of action are more varied.
-The appendix therefore closes not with a finished design, but with
-a roadmap for building the next generation of artificial systems from
-the principles established above.
+Under that sequence, Volatco does not function as a detour from artificial
+life. It functions as the current scientific instrument through which
+artificial life can be argued, measured, and revised.
 
 \section*{Epilogue}
 
