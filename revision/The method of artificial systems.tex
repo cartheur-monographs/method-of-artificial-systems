@@ -30,7 +30,14 @@
 \begin{abstract}
 This manuscript proposes a method of artificial systems for constructing
 and studying synthetic entities as bounded, situated, and adaptive
-forms of machine life.
+forms of machine life. Read together with the companion studies on
+symbolic logic and AIBO R-CODE, it advances a stronger claim: artificial
+life can be treated as embodied AI whose behavior is organized through
+asynchronous process and stabilized through in-node memory words. In
+its present experimental form, that claim is centered on a reproducible
+board-level research path: the Volatco asynchronous computing platform
+as a test environment for local memory, explicit communication, power-aware
+control, and repeatable embodied experiments.
 \end{abstract}
 
 \section{Preface on the History of the Project}
@@ -60,6 +67,20 @@ design principles, and experimental orientation needed to treat synthetic
 entities as situated systems rather than as incomplete copies of human
 intelligence.
 
+The proof burden of this manifesto does not stand alone. It is distributed
+across the sibling papers. The symbolic-logic study recovers the older
+architectural claim that sensing, state, control, action, and adaptation
+belong to one machine-intelligence design problem. The AIBO R-CODE
+study extracts a compact behavioral vocabulary from preserved robot
+software. The hybrid-substrate study then carries that vocabulary toward
+execution by showing how node-local processes, asynchronous communication,
+boot-time initialization, and functional simulation can serve as a
+concrete embodiment path. In the current revision, that path should
+be understood through the Volatco board experiments: not as a product
+claim, but as a board-level scientific setting in which reset conditions,
+pin maps, watchdog behavior, message handoff, power draw, and pass/fail
+criteria can be made explicit and repeated.
+
 This work argues that the design of artificial life has been
 constrained by inherited assumptions about artificial intelligence.
 Too often, machines are evaluated according to how well they approximate
@@ -85,6 +106,18 @@ but to offer a constructive alternative: a methodological foundation
 for building artificial systems with greater behavioral coherence,
 clearer developmental pathways, and stronger relevance to the study
 of machine life.
+
+Stated more directly in light of the companion papers, the program
+proposed here treats artificial life as a form of embodied AI. Its
+defining architecture is behavioral rather than merely representational:
+asynchronous process organizes activity across the system, while in-node
+memory words preserve local state, continuity, and adaptation. The
+hybrid-substrate work matters here because it supplies the first serious
+implementation proof of that formulation: the claim is not only conceptual,
+but architectural and executable. The strongest current output of that
+program is not a generalized robot mythology but a reproducible board
+experiment in which these claims can be tested under ordinary scientific
+conditions.
 
 
 \section{Introduction}
@@ -119,6 +152,15 @@ than reaction; it requires structured discretionary limits within
 which an entity can generate behavior that is neither wholly fixed
 nor wholly arbitrary. These three ideas form the core of the method
 proposed in this work.
+
+The sibling hybrid-substrate paper sharpens this further by giving those
+ideas an implementation grammar. In that paper, behavior does not remain
+an interpretive diagram. It is treated as something assignable to local
+nodes, carried by explicit ports, stabilized by node-local memory, and
+made reproducible through declarative initialization. That execution
+story is the strongest present proof that the method proposed here can
+be realized as embodied artificial life rather than left at the level
+of terminology.
 
 This project therefore has several linked aims. First, it seeks to
 define a conceptual vocabulary adequate to the design of synthetic
@@ -362,6 +404,12 @@ The method of artificial systems is built on a simple premise: if
 we want artificial life, we must design systems whose behavior is
 shaped by consequence. That means the entity must have constraints,
 alternatives, and stakes. It must not merely run. It must negotiate.
+In the strongest formulation of this manuscript, such negotiation belongs
+to an embodied AI architecture in which behavior is defined through
+asynchronous process and retained locally through in-node memory words.
+The hybrid-substrate paper is important because it turns that sentence
+from manifesto language into an implementation hypothesis with explicit
+node, port, memory, and loading obligations.
 
 \subsection{The Choice Methodology}
 
@@ -409,6 +457,18 @@ enough to support experiment. That means sensing, control, energy
 management, memory, actuation, and state transition should be treated
 as explicit parts of one organized whole rather than as isolated modules
 assembled without a unifying theory.
+
+This is also the point at which the companion works become decisive.
+The symbolic-logic study clarifies how machine organization can be
+expressed formally, while the AIBO R-CODE study shows how behavior
+can be decomposed into asynchronous stateful processes. Taken together,
+they support the present claim that artificial life should be engineered
+as embodied AI with local memory-bearing nodes rather than as a centralized
+disembodied intelligence. The hybrid-substrate study adds the missing
+proof layer by showing a continuous path from behavior description to
+distributed executable realization: node allocation, per-node images,
+boot-descriptor initialization, functional simulation, and eventual
+hardware manifestation on an asynchronous many-node substrate.
 
 The near-term design goals are therefore practical:
 \begin{enumerate}
@@ -491,10 +551,9 @@ the following figure:
 
 \end{figure}
 
-Such a system would be capable of operating in remote or hostile environments
-too dangerous for humans while at the same time compatible socially
-to cooperate internally and externally with those providing the system
-directives and instructions. 
+Such a system should be read analytically rather than heroically. Its
+value lies in making allocation, coordination, and dependence visible
+enough to measure, perturb, and reproduce.
 
 \subsection{Choice Featured Runtime}
 
@@ -542,7 +601,11 @@ systems therefore favors experiments in which abstract claims are
 forced into contact with engineering realities. The purpose of this
 section is not merely to describe prototypes, but to show how an artificial
 entity can be placed under conditions where energy, control, coordination,
-and consequence become experimentally visible.
+and consequence become experimentally visible. In the present state
+of the work, the strongest empirical center is the Volatco board experiment:
+an asynchronous multi-node platform where development access, watchdog
+control, node communication, power measurement, and reproducible startup
+conditions can all be specified in laboratory form.
 
 \subsection{Featured Power}
 
@@ -1005,6 +1068,9 @@ Section Overview: This section translates the earlier concepts into
 an experimental program. The concern is not to defend a finished machine,
 but to show how the method of artificial systems can be evaluated
 through measurable apparatus, software structure, and staged trials.
+At present, that evaluation is most compelling when anchored to the
+Volatco board as a reproducible substrate rather than to speculative
+future robot generalities.
 
 \subsection{Numerical Components of the Theory}
 
@@ -1018,7 +1084,10 @@ operational in a real environment.
 \subsubsection{Experimental Setup}
 
 The transmitter discussed in §4.3 was analyzed in a controlled experimental
-environment designed to support repeatable measurement.
+environment designed to support repeatable measurement. In the current
+research sequence, however, the more decisive experimental template
+is the Volatco board environment, because it combines asynchronous
+node execution with explicit development and measurement hooks.
 
 \begin{figure}[H]
 \includegraphics[scale=0.5]{figures/area_transmitter/modelf_files/ExpID}
@@ -1027,10 +1096,10 @@ environment designed to support repeatable measurement.
 
 \end{figure}
 
-For this class of experiments, the setup should be understood as a
-measurement template for the Model 'F' transmission broadcast. The
-legacy instrumentation names are less important than the methodological
-requirements they represent:
+For this class of experiments, the setup should be understood not only
+as a legacy measurement template for the Model 'F' transmission broadcast,
+but as a bridge toward the present board-level substrate experiments.
+The methodological requirements remain the same:
 \begin{itemize}
 \item a stable signal source over the target operating band,
 \item impedance measurement for tuned components,
@@ -1039,6 +1108,11 @@ requirements they represent:
 Calibration remains essential. Cables, connectors, adapters, and terminations
 must be characterized well enough that measured effects can be attributed
 to the system under test rather than to unexamined laboratory artifacts.
+The same scientific discipline now applies to the Volatco board. Reset
+mode, boot mode, watchdog state, serial programming path, pin assignment,
+and power-measurement points must all be recorded explicitly so that
+an experiment can be rerun by another researcher under substantially
+the same conditions.
 
 \subsubsection{COMSOL Multiphysics Modeling}
 
@@ -1351,51 +1425,30 @@ different consequences.
 
 There are really two coupled experiments to consider: the energetic
 infrastructure that makes persistence measurable, and the embodied
-behavioral platform on which choice can be studied empirically. The
-second need not begin with a complex creature. A simple robot with
-manipulation, sensing, and onboard control is sufficient if it can
-be placed in situations where alternative actions have visibly different
-outcomes.
+behavioral platform on which choice can be studied empirically. In
+the current state of the work, the second should be centered on the
+Volatco board rather than on a generic classroom robot. The reason
+is methodological. The board exposes the exact elements the manifesto
+cares about: asynchronous local processes, node-local memory, explicit
+communication paths, watchdog-protected persistence, and measurable
+power behavior.
 
-Consider a simple robot consisting of a hand, an arm, and a microprocessor
-\textquoteleft brain\textquoteright{} with the following specifications:
-\begin{itemize}
-\item 32-bit ARM7 main microprocessor
-\item 256 KB flash memory
-\item 64 KB RAM
-\item 8 bit Atmel AVR microcontroller @ 4 MHz
-\item 4 KB flash memory
-\item 512 Bytes RAM
-\item 100 \texttimes{} 64 pixel LCD matrix display
-\item Can be programmed using Windows or MacOS (NBC/NXC supports Linux as
-well)
-\item Users create a program with new software, powered by LabVIEW from
-National Instruments
-\item A single USB 2.0 port
-\item Bluetooth (Class II) wireless connectivity, to transfer programs to
-the NXT wirelessly or offer ways to control robots remotely (through
-mobile phones and possibly by PDA's)
-\item 4 input ports, 6-wire cable digital platform (One port includes a
-IEC 61158 Fieldbus Type 4/EN 50 170 (P-NET) compliant expansion port
-for future use)
-\item 3 output ports, 6-wire cable digital platform
-\item Digital Wire Interface, allowing for third-party development of external
-devices 
-\end{itemize}
-Using an easily programmable device allows concentration on the experimental
-logic rather than on low-level infrastructure. A simple task might
-be this: given two different colored objects placed in view, the robot
-must choose one under an explicit policy, act on that choice, and
-record the result. The required sensors are straightforward:
-\begin{itemize}
-\item An ultrasonic sensor to measure the field of vision,
-\item A light sensor to measure the color of the objects in the field of
-vision,
-\item A touch sensor to detect whether the object has been grabbed.
-\end{itemize}
-Each sensor must be organized according to the task it serves, the
-uncertainty it introduces, and the consequence of acting on it incorrectly.
-That is enough to begin a real study of artificial choice.
+That makes the immediate research program more reproducible than a
+vague appeal to future robotics. A minimal experiment can define a
+signal path, assign behavior to a small set of nodes, specify boot
+and reset conditions, state measurable pass/fail criteria, and record
+power, latency, and recovery behavior alongside the saved polyForth
+program used to produce the result. This is ordinary scientific practice:
+the experiment is not merely declared; it is specified so that it
+can be rerun.
+
+The simplest meaningful tasks in that environment are correspondingly
+modest. One can implement an event-driven sensing loop, a two-node
+message handoff, a watchdog recovery routine, or a power audit across
+idle and active conditions. Each of these tasks keeps the manifesto
+attached to observable architecture. Each asks whether behavior-defined
+asynchronous process with in-node memory words can be made explicit,
+measurable, and reproducible on the board.
 
 \subsection{Some Final Thoughts Regarding the Subject Matter}
 
@@ -1429,6 +1482,13 @@ future embodied AI systems should be built around explicit dependencies
 rather than around the fiction of unlimited compute, unlimited power,
 or context-free reasoning.
 
+Even so, the present manifesto is strongest where it stays close to
+its current experimental output. That output is not a final universal
+robot architecture. It is a reproducible research path in which the
+Volatco board serves as a concrete asynchronous substrate for studying
+behavior, memory, communication, reset discipline, and power-aware
+control under laboratory conditions.
+
 What this manuscript argues, in its present revised form, is the following:
 \begin{itemize}
 \item embodied intelligence should be studied under real energetic and environmental
@@ -1437,6 +1497,11 @@ constraints,
 life,
 \item choice becomes scientifically useful when it is tied to measurable
 consequence,
+\item artificial life in this research program is best treated as embodied
+AI with behavior-defined asynchronous process and in-node memory words,
+\item the proof of that claim is architectural: symbolic organization, behavioral
+decomposition, and hybrid substrate execution together establish the
+research program,
 \item future progress depends on experimental systems that unify hardware,
 software, and environment instead of isolating them,
 \item the path forward is constructive: build platforms that let these claims
