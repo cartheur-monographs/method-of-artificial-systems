@@ -60,12 +60,11 @@ they show that the method of artificial systems is not proposed as
 a detached philosophical stance, but as the conceptual anchor of a
 constructive research program.
 
-This manuscript is the conceptual center of a broader body
-of work on embodied machine intelligence, artificial life, and robotic
-organization. It is concerned primarily with method: the vocabulary,
-design principles, and experimental orientation needed to treat synthetic
-entities as situated systems rather than as incomplete copies of human
-intelligence.
+This manuscript is the conceptual center of a broader body of work
+on embodied machine intelligence, artificial life, and robotic organization.
+Its concern is method: the vocabulary, design principles, and experimental
+orientation needed to treat synthetic entities as situated systems
+rather than as incomplete copies of human intelligence.
 
 The proof burden of this manifesto does not stand alone. It is distributed
 across the sibling papers. The symbolic-logic study recovers the older
@@ -81,63 +80,47 @@ claim, but as a board-level scientific setting in which reset conditions,
 pin maps, watchdog behavior, message handoff, power draw, and pass/fail
 criteria can be made explicit and repeated.
 
-This work argues that the design of artificial life has been
-constrained by inherited assumptions about artificial intelligence.
-Too often, machines are evaluated according to how well they approximate
-narrow images of human reasoning rather than according to the kinds
-of autonomous behavior they can sustain in their own right. In response,
-this manuscript proposes a method of artificial systems: a framework
-for constructing and studying synthetic entities as bounded, situated,
-and adaptive systems whose behavior emerges through environmental
-coupling, feature formation, orchestration, and choice.
+This work argues that artificial life has been constrained by inherited
+assumptions about artificial intelligence. Too often, machines are
+judged by how closely they resemble narrow images of human reasoning
+rather than by the kinds of autonomous behavior they can sustain in
+their own right. The proposed alternative is direct: artificial life
+in this research program should be treated as embodied AI. Its defining
+architecture is behavioral rather than merely representational. Asynchronous
+process organizes activity across the system, while in-node memory
+words preserve local state, continuity, and adaptation.
 
-The central claim is that artificial systems become more
-intelligible, more designable, and more experimentally productive
-when they are treated as living technical entities rather than as
-incomplete imitations of the human mind. To support this claim, the
-work combines conceptual analysis with embodied and engineering-oriented
-examples. It develops a vocabulary for describing artificial entities,
-outlines a method for organizing their capacities, and identifies
-experiments through which choice, coordination, and adaptation can
-be examined in practice.
-
-The aim is not simply to criticize existing AI traditions,
-but to offer a constructive alternative: a methodological foundation
-for building artificial systems with greater behavioral coherence,
-clearer developmental pathways, and stronger relevance to the study
-of machine life.
-
-Stated more directly in light of the companion papers, the program
-proposed here treats artificial life as a form of embodied AI. Its
-defining architecture is behavioral rather than merely representational:
-asynchronous process organizes activity across the system, while in-node
-memory words preserve local state, continuity, and adaptation. The
-hybrid-substrate work matters here because it supplies the first serious
-implementation proof of that formulation: the claim is not only conceptual,
-but architectural and executable. The strongest current output of that
-program is not a generalized robot mythology but a reproducible board
-experiment in which these claims can be tested under ordinary scientific
-conditions.
+The central claim, then, is not only conceptual but methodological.
+Artificial systems become more intelligible, more designable, and
+more experimentally productive when they are treated as living technical
+entities rather than as incomplete imitations of the human mind. The
+argument is carried through vocabulary, design principles, and experiments
+in which choice, coordination, energy, and adaptation can be made
+observable. The hybrid-substrate work matters because it supplies
+the first serious implementation proof of that formulation. The strongest
+current output of the program is therefore not a generalized robot
+mythology, but a reproducible board experiment in which these claims
+can be tested under ordinary scientific conditions.
 
 
 \section{Introduction}
 
 The question guiding this work is not merely whether machines can
-be called intelligent. It is whether we have been using the right
-conceptual frame to build and understand artificial forms of life
-at all. Much of the language surrounding artificial intelligence has
-encouraged researchers to judge machines by how closely they resemble
+be called intelligent. It is whether the dominant conceptual frame
+for artificial intelligence has also limited our ability to build
+and understand artificial forms of life. Much of the language surrounding
+AI encourages researchers to judge machines by how closely they resemble
 selective features of human cognition. That orientation has produced
 useful tools, but it has also narrowed the design space. It encourages
 imitation where a more fruitful path may be construction.
 
 This manuscript takes a different position. Machines should not be
 designed primarily as reduced copies of human intelligence, nor should
-they be forced into conceptual models inherited from disciplines whose
-assumptions do not fit the systems being built. They should instead
-be approached as artificial systems: organized entities with their
-own constraints, behaviors, relations to environments, and modes of
-adaptation. Under this view, the task is not to ask whether a machine
+they be forced into conceptual models whose assumptions do not fit
+the systems being built. They should instead be approached as artificial
+systems: organized entities with their own constraints, behaviors,
+relations to environments, and modes of adaptation. Under this view,
+the task is not to ask whether a machine
 imperfectly resembles a person, but to determine what kinds of autonomy,
 coordination, and situated choice can be engineered into a synthetic
 entity and how those capacities can be studied rigorously.
@@ -162,15 +145,15 @@ story is the strongest present proof that the method proposed here can
 be realized as embodied artificial life rather than left at the level
 of terminology.
 
-This project therefore has several linked aims. First, it seeks to
-define a conceptual vocabulary adequate to the design of synthetic
-entities. Second, it proposes a methodological framework for organizing
-the features, constraints, and interactions that make artificial systems
-viable. Third, it identifies experimental paths by which these ideas
-can be embodied in robotic and machine-like forms. The intention is
-not to settle every metaphysical question surrounding life or consciousness.
-It is to create a more usable foundation for building and evaluating
-artificial systems that exhibit meaningful, adaptable behavior.
+This project has several linked aims. First, it defines a conceptual
+vocabulary adequate to the design of synthetic entities. Second, it
+proposes a methodological framework for organizing the features, constraints,
+and interactions that make artificial systems viable. Third, it identifies
+experimental paths by which these ideas can be embodied in robotic
+and machine-like forms. The aim is not to settle every metaphysical
+question surrounding life or consciousness. It is to create a more
+usable foundation for building and evaluating artificial systems that
+exhibit meaningful, adaptable behavior.
 
 The manuscript also proceeds from a criticism of prevailing AI discourse.
 The problem is not that all prior work has failed, nor that every
@@ -182,14 +165,13 @@ with durable identity, environmental embeddedness, or internally organized
 behavior. A broader methodology is needed if artificial life is to
 become more than a metaphor.
 
-The method of artificial systems is offered as one answer to that
-need. It is both conceptual and practical. It is conceptual because
-it reorders the language in which machine behavior is understood. It
-is practical because it aims toward implementation, experiment, and
-iterative refinement. The purpose of the chapters that follow is to
-define this method, situate it against competing approaches, and show
-how it can guide the construction of machines whose behavior is more
-coherently aligned with the conditions of artificial life.
+The method of artificial systems is one answer to that need. It is
+conceptual because it reorders the language in which machine behavior
+is understood. It is practical because it aims toward implementation,
+experiment, and iterative refinement. The sections that follow define
+the method, situate it against competing approaches, and show how
+it can guide the construction of machines whose behavior is more coherently
+aligned with the conditions of artificial life.
 
 \section{Conceptual Foundations}
 
@@ -260,7 +242,7 @@ than being continuously driven by an operator.
 
 \section{Limits of Dominant AI Approaches}
 
-\subsection{The Reluctance of AI}
+\subsection{Where AI Falls Short}
 
 Artificial intelligence has inherited a set of recurring habits of
 thought. Machines are often evaluated according to whether they think
@@ -305,13 +287,13 @@ control, energy-constrained systems, and adaptive machine behavior.
 They are not offered as final metaphysical definitions. They are offered
 as design terms that can travel from theory into implementation.
 
-\subsection{Literature Survey}
+\subsection{Use of Prior Work}
 
-The supporting literature is useful when it helps sharpen the future
+The supporting literature is useful only when it sharpens the future
 task of construction. The relevant question is not which author can
-be treated as a final authority on life, mind, or machine intelligence,
-but which concepts can help define better experiments and stronger
-technical criteria for artificial systems.
+serve as final authority on life, mind, or machine intelligence, but
+which concepts help define better experiments and stronger technical
+criteria for artificial systems.
 
 \subsection{Living Systems}
 
@@ -375,7 +357,7 @@ The central test for any model in this manuscript is therefore forward-facing:
 does it help specify a better artificial entity than would otherwise
 be built? If not, it is background rather than method.
 
-\subsection{The Simple Conclusion}
+\subsection{Practical Conclusion}
 
 The practical conclusion of this section is simple. The future of
 artificial life will depend less on whether machines imitate their
@@ -390,13 +372,11 @@ begins.
 
 \section{The Method of Artificial Systems}
 
-Section Overview: This section defines the method itself. The guiding
-claim is that artificial systems become scientifically interesting
-when choice is tied to consequence under material constraint. If a
-machine must select among alternatives while exposed to energy limits,
-environmental pressure, and state-dependent outcomes, then emergent
-behavior can be studied as an engineering result rather than as a
-purely theoretical hope.
+Artificial systems become scientifically interesting when choice is
+tied to consequence under material constraint. If a machine must select
+among alternatives while exposed to energy limits, environmental pressure,
+and state-dependent outcomes, then emergent behavior can be studied
+as an engineering result rather than as a purely theoretical hope.
 
 \subsection{Method of Expression}
 
@@ -425,7 +405,7 @@ human interiority to make scientifically interesting choices. It need
 only operate in circumstances where alternative actions alter later
 possibilities in non-trivial ways.
 
-\subsubsection{Analysis Toolbox, Part A: The Choice Complex}
+\subsubsection{Analysis Toolbox A: The Choice Complex}
 
 Choice is most productively studied as part of a larger system complex.
 It is not enough to isolate a single decision point and treat it as
@@ -438,18 +418,17 @@ decision $\rightarrow$ action $\rightarrow$ consequence $\rightarrow$
 updated state
 \end{quote}
 
-What matters in this sequence is not its elegance but its closure.
-Consequences must alter later possibilities. Once that closure is
-present, choice can be observed as a feature of system organization
-rather than as a decorative metaphor.
+What matters in this sequence is its closure. Consequences must alter
+later possibilities. Once that closure is present, choice can be observed
+as a feature of system organization rather than as a decorative metaphor.
 
-The choice complex therefore refers to the minimum arrangement necessary
+The choice complex is the minimum arrangement necessary
 to make choice consequential. It requires a system state that can
 vary, more than one actionable alternative, an environment that changes
 in response to action, and consequences that feed back into later
 decisions.
 
-\subsubsection{Analysis Toolbox, Part B: Architecture Theory and Design}
+\subsubsection{Analysis Toolbox B: Architecture and Design}
 
 Architecturally, the project favors systems that can expose internal
 state, environmental coupling, and behavioral consequence clearly
@@ -461,14 +440,12 @@ assembled without a unifying theory.
 This is also the point at which the companion works become decisive.
 The symbolic-logic study clarifies how machine organization can be
 expressed formally, while the AIBO R-CODE study shows how behavior
-can be decomposed into asynchronous stateful processes. Taken together,
-they support the present claim that artificial life should be engineered
-as embodied AI with local memory-bearing nodes rather than as a centralized
-disembodied intelligence. The hybrid-substrate study adds the missing
-proof layer by showing a continuous path from behavior description to
-distributed executable realization: node allocation, per-node images,
-boot-descriptor initialization, functional simulation, and eventual
-hardware manifestation on an asynchronous many-node substrate.
+can be decomposed into asynchronous stateful processes. The hybrid-substrate
+study adds the proof layer by showing a continuous path from behavior
+description to distributed executable realization. Together they support
+the present claim that artificial life should be engineered as embodied
+AI with local memory-bearing nodes rather than as a centralized disembodied
+intelligence.
 
 The near-term design goals are therefore practical:
 \begin{enumerate}
@@ -480,7 +457,7 @@ resource conditions,
 interaction.
 \end{enumerate}
 
-\subsubsection{Analysis Toolbox, Part C: Automata- and Agent-Based Domain Considerations}
+\subsubsection{Analysis Toolbox C: Automata and Agents}
 
 Automata and agent abstractions remain useful because they offer structured
 ways to express states, transitions, priorities, monitoring, and action
@@ -488,13 +465,12 @@ selection. Their value here is not doctrinal. It is operational. They
 make it easier to map theory into executable organization and to inspect
 behavior when the system is under stress.
 
-Agent-style components are especially useful when they are treated
-as mediators among sensing, evaluation, and effectors rather than
-as free-floating software metaphors. Their role is to help preserve
-robustness, local decision quality, and interpretability inside a
-larger artificial entity.
+Agent-style components are especially useful when treated as mediators
+among sensing, evaluation, and effectors rather than as free-floating
+software metaphors. Their role is to preserve robustness, local decision
+quality, and interpretability inside a larger artificial entity.
 
-\subsection{The Problems Under Consideration}
+\subsection{Core Problems}
 
 The practical problems that organize the method are:
 \begin{enumerate}
@@ -508,13 +484,6 @@ under which artificial systems become viable or fail. Any future program
 in artificial life that neglects one of them risks producing impressive
 demonstrations without durable entities.
 
-\subsection{Interim Conclusions}
-
-The method of artificial systems is therefore not a single trick or
-one privileged algorithm. It is a combinatorial design stance in which
-behavior, architecture, energy, and consequence are treated as parts
-of one experimental problem.
-
 \subsection{Orchestration as an Organizing Principle}
 
 Orchestration extends the method from single entities to coordinated
@@ -523,7 +492,7 @@ but as distributed constellations of controllers, mobile units, sensors,
 relays, and shared resources. This makes orchestration more than a
 metaphor. It becomes a general design principle.
 
-\subsection{What is Orchestration?}
+\subsection{Orchestration Defined}
 
 In this framework, orchestration includes the distribution of both
 information and energy. That second term is crucial. Most discussions
@@ -555,7 +524,7 @@ Such a system should be read analytically rather than heroically. Its
 value lies in making allocation, coordination, and dependence visible
 enough to measure, perturb, and reproduce.
 
-\subsection{Choice Featured Runtime}
+\subsection{Choice in Runtime}
 
 Choice becomes sharper in an orchestrated system because the meaning
 of a decision is not contained within one node alone. A local decision
@@ -583,9 +552,9 @@ selection in a machine architecture.
 This is one reason orchestration is so useful. Distributed systems
 make it easier to study how one decision influences many later possibilities.
 They do not solve the problem automatically, but they widen the experimental
-surface on which adaptive behavior can appear.
+surface on which adaptive behavior can be observed.
 
-\subsection{The Relevancy of The AI Problem in Orchestration}
+\subsection{Why Orchestration Exposes the Limits of AI}
 
 Orchestration makes visible why the older AI categories are too narrow
 for this project. A distributed artificial entity is not interesting
@@ -609,12 +578,11 @@ conditions can all be specified in laboratory form.
 
 \subsection{Featured Power}
 
-The Featured Power Environment (FPE) is proposed as a concrete testbed
-for consequential machine behavior. Its purpose is to give an artificial
-system a structured relation to power so that continued operation
-depends on successful regulation rather than on constant external
-provision. In this framework, energy is not merely a utility service.
-It is part of the behavioral problem.
+The Featured Power Environment (FPE) is a concrete testbed for consequential
+machine behavior. It gives an artificial system a structured relation
+to power so that continued operation depends on successful regulation
+rather than on constant external provision. Here, energy is not merely
+a utility service. It is part of the behavioral problem.
 
 The basic idea is simple. Different operational states of the machine
 require different levels of available power. If the system can detect
@@ -634,14 +602,14 @@ The waveforms in Figure 3 represent operational power states that
 the machine can request or receive. Level A is full function, Level
 B is reduced activity, and Level C is a low-power or sleep condition.
 The specific values matter less than the architecture of the choice:
-the system is not either simply on or off, but capable of moving among
-energy states with different behavioral consequences.
+the system is not simply on or off, but capable of moving among energy
+states with different behavioral consequences.
 
-There are three modes of operation for the device shown in Figure
-3: sleep, average, and high power, represented by C, B, and A respectively.
-At a given time, the machine receives the level of power necessary
-for its operation. For example, if a general-purpose robot has a
-power consumption rating of 15VDC with a current draw of 0.125A,
+For the device shown in Figure 3, these three modes can be treated
+as sleep, average, and high power, represented by C, B, and A respectively.
+At a given time, the machine should receive only the level of power
+necessary for its operation. For example, if a general-purpose robot
+has a power consumption rating of 15VDC with a current draw of 0.125A,
 the consumed power at an instantaneous time in watts is:
 
 \begin{equation}
@@ -654,8 +622,8 @@ required amount of power, a pulsed system is preferable to a constant-wave
 instead of in a continuous stream. This acknowledges C. Melear's priority
 in identifying low-power pulsed techniques for modular processors as
 an engineering basis for interval-driven power use.
-A pulse period
-of 10$\mu$s should suffice to power onboard components. The processing
+A pulse period of 10$\mu$s should suffice to power onboard components.
+The processing
 bus clock can then be aligned with the pulse period so that power
 flow and computational tempo remain coupled. In this way, unless the
 power is used by a loaded circuit, the system does not transmit more
@@ -677,7 +645,7 @@ band can tolerate feedback, allowing messages to be embedded in the
 same transmission structure.
 
 
-\subsubsection{The Robots under Test}
+\subsubsection{Platforms Under Test}
 
 The design goal is not to bind the method to a single robot body.
 The stronger ambition is to develop an experimental pattern that can
@@ -698,11 +666,11 @@ studied without hand-waving.
 \subsection{Robotic Software Abstractions}
 
 Software matters here because it is where system state, decision logic,
-and behavioral coordination become inspectable. The goal is not software
-abstraction for its own sake. The goal is software architecture that
-makes adaptation legible and implementable.
+and behavioral coordination become inspectable. The aim is not software
+abstraction for its own sake, but software architecture that makes
+adaptation legible and implementable.
 
-\subsubsection{How Successful software abstractions can lead to interactive machines.}
+\subsubsection{Software Architecture for Interactive Machines}
 
 The software paradigm proposed here is modular and domain-oriented.
 Its purpose is to preserve explicit mappings among sensing, evaluation,
@@ -711,7 +679,7 @@ language, a layered control stack, or a library architecture, the
 important feature is that behavior remains organized around consequential
 transitions rather than opaque monolithic execution.
 
-\subsubsection{What kinds of abstractions are we talking about?}
+\subsubsection{Useful Abstractions}
 
 The most useful abstractions are those that report and regulate internal
 state: automata-style transitions, monitoring agents, error recovery,
@@ -719,14 +687,14 @@ power-state management, and interfaces between sensors and effectors.
 These are valuable because they produce scientific data while the
 system is operating, degrading, or recovering.
 
-\subsubsection{How independence can insure long-term perpetuation of intelligence.}
+\subsubsection{Autonomy and Long-Term Behavior}
 
 Autonomy remains central because long-term machine behavior cannot
 be studied seriously if every significant correction is supplied by
 an operator. The more the system can regulate its own conduct under
 constraint, the more meaningful its experimental behavior becomes.
 
-\subsubsection{Learning survival at the cost of existence--The Entropic Circuit.}
+\subsubsection{The Entropic Circuit}
 
 The entropic circuit is one of the clearest examples of how this manuscript
 turns theory into apparatus. Its purpose is to expose the machine
@@ -748,7 +716,7 @@ that affects what it can become next.
 \end{figure}
 
 
-\subsubsection{Scenario Coding}
+\subsubsection{Scenario Design}
 
 Scenario coding can be understood more simply as the deliberate design
 of behavior-rich situations. Instead of treating code as a flat list
@@ -1035,7 +1003,7 @@ that matters because it shows that embodiment is measurable: an artificial
 system does not inhabit an abstract world but a sharply bounded field
 of affordances that can be tuned, modeled, and experimentally stressed.
 
-\subsubsection{The Role of the Queen in the Colony}
+\subsubsection{The Queen in the Colony}
 
 The queen is best understood as the high-capacity orchestration layer
 of the colony. It need not be a single machine in future realizations;
@@ -1045,7 +1013,7 @@ and enforces global constraints. Its role is not to dominate every
 local action but to preserve continuity across the system: memory,
 policy, calibration, and long-horizon coordination.
 
-\subsubsection{The Role of the Drone in the Colony}
+\subsubsection{The Drone in the Colony}
 
 The drone is the local embodied worker. It carries only the sensing,
 actuation, buffering, and decision machinery necessary to survive,
@@ -1067,9 +1035,9 @@ the outcomes of many such interpretations over time.
 
 \section{Results and Interpretive Discussion}
 
-Section Overview: This section translates the earlier concepts into
-an experimental program. The concern is not to defend a finished machine,
-but to show how the method of artificial systems can be evaluated
+The earlier concepts matter only if they can be translated into an
+experimental program. The concern here is not to defend a finished
+machine, but to show how the method of artificial systems can be evaluated
 through measurable apparatus, software structure, and staged trials.
 At present, that evaluation is most compelling when anchored to the
 Volatco board as a reproducible substrate rather than to speculative
@@ -1125,41 +1093,37 @@ and sensitivity before hardware is rebuilt at full scale. The value
 of simulation here is not to replace the experiment, but to narrow
 the search space, expose likely failure regions, and generate falsifiable
 expectations for physical trials.
-that meaningful simulations of today\textquoteright s complex systems
-require arbitrary couplings between different physics phenomena in
-one and the same model. Such couplings in this thesis section denoted
-'Wireless Power for Robot Orchestrated Colonies (WPROC) will attempt
-to analyze such a complex system and demonstrate tools for analysis.
-The coupled multiphysics models will be arbitrary couplings between:
+
+In this project, the relevant modeling problem is a coupled one. The
+proposed Wireless Power for Robot Orchestrated Colonies (WPROC) environment
+asks whether power transmission, receiver morphology, and orchestration
+behavior can be studied within one shared model. The coupled system
+therefore has three parts:
 \begin{itemize}
 \item central transmitting complex (queen),
 \item mobile receiving swarm quad/bipeds (drones),
 \item control and orchestration of power distribution model.
 \end{itemize}
-Some more detailed questions relevant here are:
+
+The detailed questions are practical:
 \begin{itemize}
 \item What are the geometries of the system under study?
-\item How can the problem be broken down into manageable pieces for grant-based
-experiments, and into publishable results?
+\item How can the problem be broken down into manageable experimental units?
 \end{itemize}
 Referring back to Figure 2, in the discussion of orchestration §3.1,
 the description of the system under consideration for multiphysics
 modeling is a cavity-resonant conical transmitter/receiver with an
 extensible conic cap.
 
-The queen is coupled (as a whispering gallery with ellipsoidal transmission
-pathways) to a collection of social autonomous robots, drones, who\textquoteright s
-quadruped bodies form a conductive shape and surface area creating
-a means of an inductive potential. They\textquoteright re body shape
-can transform its length along the x-axis and the z-axis by mechanical
-means of standing upright bipedally in an equidistant fashion. The
-purpose of the morphology is to allow more directional receivership
-at a cost of mobility speed. Some of the features are that this is
-a high capacitance, high impedance system---to aid in powering devices
-in the far-field where the edges of the eddy currents will be boosted
-in range by the placement of signal relays---of two flavors, coupled
-and uncoupled fields. Coupled uses a series of concentric circles
-on the charge and uncoupled uses a contiguous spiral.
+The queen is coupled to a collection of autonomous receiving drones.
+In the model, the transmitter geometry and the receiver body geometry
+must be treated together, because receiver posture, conductive surface
+area, and orientation all affect inductive coupling. One design hypothesis
+is that a transformable body can trade mobility for directional reception.
+Another is that a high-capacitance, high-impedance system may extend
+usable range when assisted by relay structures. These are precisely
+the kinds of claims a coupled model should help test before hardware
+is rebuilt.
 
 Model Requirements: An electrically charged conic section powered
 by a single \emph{n} turn Archimedean spiral coil coupled to a linear
@@ -1179,11 +1143,10 @@ T$_{\text{b}}$. Consider the figure:
 
 \end{figure}
 
-Here is expressed the queen transmitting apparatus. This model is
-simply a mock-up, to get a sense of how the functional model should
-appear resulting from the conceptual sketch exhibited in Figure 2.
-A more concise model, including the capacitance hooks and more detailed
-charge distribution is:
+This figure sketches the queen transmitting apparatus. It is not yet
+the finished engineering model, but a functional mock-up derived from
+the conceptual sketch in Figure 2. A more concise model, including
+the capacitance hooks and a more detailed charge distribution, is:
 
 \begin{figure}[H]
 \includegraphics[scale=0.5]{figures/compositeModelState}
@@ -1192,12 +1155,11 @@ charge distribution is:
 
 \end{figure}
 
-This is the current state of the model at this time. It is for the
-continuation this thesis that it will be more worked out. However,
-it is also necessary to mention that the model provides no insight
-into its function without reference to an environment of some kind.
-In this instance, it is simply an area surrounding so that the equations
-can operate.
+At present, this model is still provisional. Its value lies less in
+its visual completeness than in its role as a scaffold for measurable
+questions. It also has no meaning without an environment, since field
+behavior, range, and coupling depend on the surrounding space in which
+the equations operate.
 
 \begin{figure}[H]
 \includegraphics[scale=0.5]{figures/modelEnvironment}
@@ -1206,9 +1168,9 @@ can operate.
 
 \end{figure}
 
-Figure 19 expresses the core as a function of its limit---at transponder
-minimum placement where the relays would be placed. The next task
-is to add the material and electrical characteristics.
+Figure 19 expresses the core at its limit condition, with the transponder
+at minimum placement and relay positions implied. The next task is
+to add the material and electrical characteristics.
 
 \subsection{Controllers}
 
@@ -1405,7 +1367,7 @@ relations should be explicit, inspectable, and extensible.
 \end{figure}
 
 
-\subsubsection{Some Anticipated Conclusions}
+\subsubsection{Expected Outcomes}
 
 The most useful anticipated conclusion is modest and strong at the
 same time: artificial experience can be studied as the accumulation
@@ -1424,7 +1386,7 @@ The machine therefore requires a data management system, a control
 layer, and an environment in which better and worse decisions carry
 different consequences.
 
-\subsubsection{Experimentation Toward Understanding of the Choice Complex and Methodology}
+\subsubsection{Further Experiments on Choice and Method}
 
 There are really two coupled experiments to consider: the energetic
 infrastructure that makes persistence measurable, and the embodied
@@ -1453,7 +1415,7 @@ attached to observable architecture. Each asks whether behavior-defined
 asynchronous process with in-node memory words can be made explicit,
 measurable, and reproducible on the board.
 
-\subsection{Some Final Thoughts Regarding the Subject Matter}
+\subsection{Closing Remarks}
 
 Considering the intertwining of the components presented here, what
 lasting directions become visible?
@@ -1492,7 +1454,7 @@ Volatco board serves as a concrete asynchronous substrate for studying
 behavior, memory, communication, reset discipline, and power-aware
 control under laboratory conditions.
 
-What this manuscript argues, in its present revised form, is the following:
+What this manifesto argues, in condensed form, is the following:
 \begin{itemize}
 \item embodied intelligence should be studied under real energetic and environmental
 constraints,
@@ -1511,23 +1473,26 @@ software, and environment instead of isolating them,
 be tested, criticized, and improved.
 \end{itemize}
 
-\section{Appendices: Replicas--The Plan}
+These claims are intended to narrow the agenda, not enlarge it. The
+next stage of the work is to refine them through reproducible experiments
+that make behavior, state, communication, and energetic dependence
+visible under controlled conditions.
+
+\section{Appendix: Replicas and Plan}
 
 \subsection{Plan Summary}
 
-This appendix is best read as a development roadmap for future embodied
-systems. Its purpose is to translate the manifesto into buildable
-work packages. The long-term objective is not a single demonstration,
-but a family of machines that can regulate energy, communicate state,
-adapt behavior, and preserve useful structure over time.
+This appendix serves as a development roadmap for future embodied systems.
+The long-term objective is not a single demonstration, but a family
+of machines that can regulate energy, communicate state, adapt behavior,
+and preserve useful structure over time.
 
 The problem can be organized into four coupled components:
 \begin{enumerate}
-\item The Problem of Energy (subsistence),
-\item The Problem of Communication {[}inner: connections (wires); outer
-cooperation (society){]},
-\item The Problem of Control (manipulation of the environment),
-\item The Problem of Raw Materials (reproduction).
+\item Energy,
+\item Communication {[}inner connections; outer cooperation{]},
+\item Control,
+\item Raw Materials.
 \end{enumerate}
 In practice, these components should not be pursued independently.
 Internal process and external support are mutually defining. An embodied
@@ -1540,32 +1505,16 @@ In addressing artificial life, the central question remains: what
 properties must an artificial system possess before the language of
 life becomes scientifically useful? A practical starting point is
 the familiar cluster of characteristics often associated with living
-systems:
-\begin{enumerate}
-\item Homeostasis: Regulation of its internal environment to maintain a
-constant state.
-\item Organization: Being composed one of or more \textquoteleft basic\textquoteright{}
-units such as cells.
-\item Metabolism: Consumption of energy by converting non-living matter
-into material for the \textquoteleft basic\textquoteright{} units
-and decomposing matter.
-\item Growth: Maintenance of a higher rate of synthesis rather than catalysis
-in order to increase the preponderance of its parts.
-\item Response to stimuli: An autonomous or calculated event causally related
-to an environmental state.
-\item Adaptation: Altering its fundamental processes, including behavior,
-in response to environmental stimuli.
-\item Reproduction: The introduction of new organisms based upon itself.
-\end{enumerate}
+systems: homeostasis, organization, metabolism, growth, response to
+stimuli, adaptation, and reproduction.
 These are useful but still too general. For this manuscript, a narrower
 working definition is more productive. Artificial life should be understood
 as organized matter and code that can sustain itself, interpret conditions,
-and alter its behavior under constraint. A useful first criterion
-therefore comes from order, disorder, and entropy. This acknowledges
-Erwin Schr\"odinger's priority in framing life through the maintenance
-of order against equilibrium and the practical significance of negative
-entropy. The
-following constitute \emph{Criteria One}:
+and alter its behavior under constraint. A first criterion comes from
+order, disorder, and entropy. This acknowledges Erwin Schr\"odinger's
+priority in framing life through the maintenance of order against equilibrium
+and the practical significance of negative entropy. The following constitute
+\emph{Criteria One}:
 \begin{enumerate}
 \item Preserve order against disorder: the system must resist collapse by
 remaining sensitive to the costs of instability.
@@ -1574,7 +1523,7 @@ by using negative entropy as a practical resource.
 \item Extract order from the environment: the system must consume energy
 or information to sustain its non-permanent state.
 \end{enumerate}
-Accepting this as a working foundation, such a form should:
+From that foundation, such a form should:
 \begin{enumerate}
 \item Strive for order based on disorder.
 \item Strive for a successive series of states keeping it distant from equilibrium.
@@ -1585,14 +1534,13 @@ decision-making capacity.
 \item Begin with internal replication in software so the model's adaptive
 potential can be studied before larger physical implementations.
 \end{enumerate}
-To generate empirical evidence for these claims, the first viable
-instances of artificial life should manifest through self-construction,
-modification, adaptation, and replication. The emphasis is deliberately
-practical. The field moves forward by building systems that can be
-tested under consequence, not by restating philosophical positions
-without machinery attached to them.
+The first viable instances should appear through self-construction,
+modification, adaptation, and replication. The emphasis is practical.
+The field moves forward by building systems that can be tested under
+consequence, not by restating philosophical positions without machinery
+attached to them.
 
-\subsection{The First Consideration}
+\subsection{First Consideration}
 
 Following Criteria One, future work should be organized around four
 features:
@@ -1607,27 +1555,21 @@ form one half of the larger problem; modification and adaptation form
 the other. Together they define the engine of self-alteration.
 
 Considering the form in context with its environment and moving in
-linear time, three dynamic features are always present:
-\begin{enumerate}
-\item Creation,
-\item Causality, and,
-\item Change.
-\end{enumerate}
-The machine must begin somewhere, be subject to its environment, remain
-responsible for its selections, and account for the consequences of
-those selections if it is to persist.
+linear time, the machine must begin somewhere, remain subject to its
+environment, and account for the consequences of its selections if
+it is to persist.
 
 \subsubsection{Feature Breakdown}
 
-To generate empirical evidence, the next model should be designed
-to meet Criteria One directly. Specifically, it should expose self-construction
-and modification under changing conditions. Full physical self-replication
-is a distant objective, but a useful intermediate target is a colony
-or automated environment in which cooperating machines gather energy,
-process materials, maintain one another, and extend their operational
-capacity with decreasing human supervision.
+To generate empirical evidence, the next model should meet Criteria
+One directly by exposing self-construction and modification under
+changing conditions. Full physical self-replication is a distant objective,
+but a useful intermediate target is a colony or automated environment
+in which cooperating machines gather energy, process materials, maintain
+one another, and extend their operational capacity with decreasing
+human supervision.
 
-\subsubsection{Computational Considerations and Engineering Environments}
+\subsubsection{Computational Environment}
 
 The computational structure of an early system such as \emph{Uhoo}
 can be understood as an algorithm with explicit variables, bounded
@@ -1643,41 +1585,26 @@ platforms as well as larger distributed systems.
 
 \subsubsection{Prospective Design Sources for Artificial Life}
 
-Useful design sources for future work include:
-\begin{enumerate}
-\item previous experimental architectures that expose the coupling between
-energy, sensing, and control,
-\item contemporary artificial-life techniques that privilege adaptation,
-      with explicit acknowledgement of Steve Grand's priority in treating
-      lifelike behavior as something grown through situated adaptive
-      process rather than scripted display,
-\item physical machine platforms simple enough to instrument deeply,
-\item speculative design exercises that reveal missing capabilities,
-\item philosophy only where it sharpens an engineering question, with
-      acknowledgement of Jean Baudrillard's priority in forcing questions
-      about simulation, representation, and the limits of appearance
-      without treating that work here as a program for design,
-\item thought experiments only when they can be translated into buildable
-tests.
-\end{enumerate}
-The value of these sources is selective. They matter only insofar
-as they help specify experiments that can be implemented, measured,
-and revised.
+Useful design sources include experimental architectures that expose
+the coupling between energy, sensing, and control; contemporary artificial-life
+work that privileges adaptation, including Steve Grand's priority on
+grown rather than merely scripted behavior; physical machine platforms
+simple enough to instrument deeply; and philosophy only where it sharpens
+an engineering question, as in Baudrillard's pressure on problems of
+simulation and appearance. These sources matter only insofar as they
+help specify experiments that can be implemented, measured, and revised.
 
-\subsection{The Second Consideration}
+\subsection{Second Consideration}
 
 The second consideration concerns description and construction. A
 system is not alive merely because it contains rules; those rules
 must be implemented in a body, runtime, or colony that can preserve
-their consequences. The central research problem is therefore to understand
-how descriptions become constructions efficiently enough to support
-adaptation. A genotype-phenotype transformation is one way to express
-this. In engineering terms, it is the problem of turning compact representations
-into stable embodied behavior. This acknowledges H. H. Pattee's priority
-in arguing that artificial life requires a real epistemology linking
-description, symbol, and embodied construction. 
+their consequences. In engineering terms, this is the problem of turning
+compact representations into stable embodied behavior. This acknowledges
+H. H. Pattee's priority in arguing that artificial life requires a
+real epistemology linking description, symbol, and embodied construction.
 
-\subsection{The Third Consideration}
+\subsection{Third Consideration}
 
 The third consideration concerns the artificial physical world itself.
 Every embodied system inhabits a regime of laws, descriptions, and
@@ -1686,26 +1613,18 @@ the organism must implement those descriptions as functioning constructions
 inside that regime rather than merely carry symbolic representations
 of them.
 
-\subsection{The Fourth Consideration}
+\subsection{Fourth Consideration}
 
 A crucial feature resides in design practice: how features are constructed,
 how they are composed, and how efficiently they can be implemented
 and revised. Particular languages matter less than the discipline
 with which patterns are selected and tested. Reusable structures matter
 because they allow successful solutions to be repeated without reconstructing
-the whole system from first principles. As such, there are six major
-considerations in choosing the proper pattern:
-\begin{enumerate}
-\item Consider how design patterns solve problems.
-\item Scan Intent sections. Consider each pattern\textquoteright s intent
-to find the one relevant to the problem at hand.
-\item Study how patterns interrelate.
-\item Study patterns of like purpose.
-\item Examine a cause of redesign.
-\item Consider what should be variable in the design.
-\end{enumerate}
-Pursuant to this, the following table condenses the above six into
-a single format.
+the whole system from first principles. In practice, pattern selection
+should stay close to purpose, interdependence, redesign pressure, and
+the variables that genuinely matter to adaptive behavior.
+The following table condenses those six considerations into a single
+format.
 
 \begin{figure}[H]
 \centering
@@ -1715,40 +1634,19 @@ a single format.
 
 \end{figure}
 
-The next step is to determine what patterns to pick and how to use
-them. There is an eight-point process:
-\begin{enumerate}
-\item Read the pattern once through for an overview of its costs, benefits,
-and likely consequences.
-\item Study the Structure, Participants, and Collaborations to understand
-the classes and objects and how they relate to one another.
-\item Look at available sample code to see a concrete example and test its
-effectiveness in design and implementation.
-\item Choose names for pattern participants that are meaningful in the application
-context, stay away from naming conventions that are too abstract but
-hint to their function(s).
-\item Define the classes, declare their interfaces, establish their inheritance
-relationship, and define the instance variables that represent data
-and object references. These decisions will affect the pattern directly.
-\item Define application-specific names for operations in the pattern and
-be consistent throughout.
-\item Implement the operations to carry out the responsibilities and collaborations
-in the pattern.
-\item Do not apply the pattern indiscriminately. Understand the nature of
-the problem and what is absolutely necessary without code \textquotedblleft bloating\textquotedblright .
-\end{enumerate}
-Having listed these essentials, the task is to apply them to the orchestrated
-plan and reject patterns that add complexity without improving adaptive
-capacity.
+The task is to choose, test, and name patterns in ways that keep structure
+clear, implementation disciplined, and complexity proportionate to
+the adaptive problem at hand. Patterns should be rejected whenever
+they add design weight without improving experimental capacity.
 
-\subsubsection{Specific Considerations Set Forth}
+\subsubsection{Reflective Programming}
 
 One especially important capability is reflective programming: the
 ability of the system to inspect and, within bounds, rewrite portions
 of its own procedure. This matters only when the resulting changes
 can be validated against consequence, resource usage, and system stability.
 
-\subsection{The Machine}
+\subsection{Machine Outlook}
 
 The machine envisioned by this appendix is not one replica but a class
 of systems. Featured power and choice are only the first experimental
@@ -1756,27 +1654,25 @@ themes, but they already suggest a broader framework in which embodied
 machines are designed around energetic dependence, structured communication,
 modular control, and the capacity to preserve useful adaptations.
 
-This work should not be considered in a vacuum. Its value depends
-on whether the concepts presented here can be carried into broader
-robotic platforms, denser colonies of agents, and richer environments
-in which the costs and rewards of action are more varied. The appendix
-therefore closes not with a finished design, but with a roadmap for
-building the next generation of artificial systems from the principles
-established above.
+Its value depends on whether the concepts presented here can be carried
+into broader robotic platforms, denser colonies of agents, and richer
+environments in which the costs and rewards of action are more varied.
+The appendix therefore closes not with a finished design, but with
+a roadmap for building the next generation of artificial systems from
+the principles established above.
 
 \section*{Epilogue}
 
 The older lineage behind this manifesto deserves explicit acknowledgement
-without being turned into a review literature. Grey Walter established
+without being turned into review literature. Grey Walter established
 an early and durable priority for embodied machine behavior, and Owen
 Holland's later recovery of that line helped keep the problem of situated
-artificial agency in view. Holland and McFarland
-also deserve acknowledgement for giving artificial ethology a clear
-programmatic form, while Rodney Brooks helped keep attention on the
-problem of building materially embodied, behavior-producing systems
-across the boundary between artificial intelligence and artificial
-life. Ross Ashby remains central
-for priority on regulation, stability under disturbance, and adaptive
+artificial agency in view. Holland and McFarland also deserve acknowledgement
+for giving artificial ethology a clear programmatic form, while Rodney
+Brooks helped keep attention on the problem of building materially
+embodied, behavior-producing systems across the boundary between artificial
+intelligence and artificial life. Ross Ashby remains central for
+priority on regulation, stability under disturbance, and adaptive
 organization as a state problem.
 
 Several other works mark important boundaries of the design space addressed
@@ -1796,16 +1692,15 @@ On the constructive side, A. van Deursen is acknowledged for articulating
 the trade between domain-specific languages and frameworks; E. F. Codd
 for the importance of formal data organization; Stephen Kleene, more
 cautiously, for the logical treatment of effective procedure associated
-with computable description; and John
-von Neumann for priority on self-reproduction as a design problem rather
-than a mere metaphor. Andre Kurs,
-Aristeidis Karalis, Robert Moffatt, J. D. Joannopoulos, Peter Fisher,
-and Marin Solja\v{c}i\'{c} are acknowledged for giving wireless power
-transfer a modern experimental footing, while Steve Grand's published
-work is acknowledged for keeping open the possibility that artificial
-life must be grown through situated adaptive process rather than assembled
-as static demonstration; the private correspondence is retained here
-as part of the project's own historical record rather than as public
-literature.
+with computable description; and John von Neumann for priority on
+self-reproduction as a design problem rather than a mere metaphor.
+Andre Kurs, Aristeidis Karalis, Robert Moffatt, J. D. Joannopoulos,
+Peter Fisher, and Marin Solja\v{c}i\'{c} are acknowledged for giving
+wireless power transfer a modern experimental footing, while Steve
+Grand's published work is acknowledged for keeping open the possibility
+that artificial life must be grown through situated adaptive process
+rather than assembled as static demonstration; the private correspondence
+is retained here as part of the project's own historical record rather
+than as public literature.
 
 \end{document}
