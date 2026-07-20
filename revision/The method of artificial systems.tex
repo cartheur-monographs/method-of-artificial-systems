@@ -492,6 +492,7 @@ an asynchronous multi-node platform where development access, watchdog
 control, node communication, power measurement, and reproducible startup
 conditions can all be specified in laboratory form.
 
+
 \textbf{Featured Power.} A featured-power arrangement remains useful here only as a
 supporting example of consequential machine behavior. It gives an
 artificial system a structured relation to power so that continued
@@ -610,15 +611,11 @@ that evaluation is especially clear when anchored to the Volatco board
 as a reproducible substrate rather than to speculative future robot
 generalities.
 
-\subsection{Numerical Components of the Theory}
-
-The numerical material in this work matters only when it helps compare
+Measurement and comparison matter only when they help compare
 real operating conditions. Geometry, control, electromagnetics, software
 structure, and behavioral evaluation enter the manuscript only to
 the extent that they produce quantities that can be measured, compared,
 and rerun under constraint.
-
-\subsubsection{Experimental Setup}
 
 The setup that matters most in the present manuscript is the Volatco
 board environment, because it combines asynchronous node execution
@@ -637,8 +634,6 @@ and power-measurement points must all be recorded explicitly so that
 an experiment can be rerun by another researcher under substantially
 the same conditions.
 
-\subsubsection{Modeling as Secondary Support}
-
 Simulation remains useful, but it is now secondary to the board-level
 experiments. Its role is to help narrow search spaces, expose likely
 failure regions, and generate testable expectations before hardware
@@ -652,14 +647,10 @@ is heuristic rather than decisive. Even supportive models must be
 tied back to explicit material and electrical characteristics if they
 are to inform experiment at all.
 
-\subsection{Controllers}
-
 Controllers are where the energetic, perceptual, and behavioral layers
 meet. A future artificial-life platform should therefore treat controllers
 as explicit objects of design rather than incidental code surrounding
 the hardware.
-
-\subsubsection{Visual Robotics and Virtual Controllers}
 
 Virtual controllers matter because they let us prototype choice, orchestration,
 and sensor fusion before committing to a specific body. The exact software
@@ -673,8 +664,6 @@ are instrumented in detail. The larger point is simple: virtual environments
 provide a disciplined route from conceptual manifesto to testable
 architecture.
 
-\subsubsection{Agents and their Effectors}
-
 An agent in this document is not a metaphysical claim; it is a software
 entity with bounded responsibilities, observable state, and effectors
 through which it acts on the rest of the system. Effectors are therefore
@@ -682,9 +671,7 @@ the practical bridge between internal evaluation and external consequence.
 Treating them explicitly allows the architecture to compare what was
 intended, what was executed, and what actually happened in the environment.
 
-\subsection{The Choice Complex}
-
-The Choice Complex is the experimental heart of the manifesto. Its
+The choice complex is the experimental heart of the manifesto. Its
 purpose is to create circumstances under which a machine must regulate
 its own continuation under bounded energetic conditions and must do
 so through interpretable software and hardware structures. The Featured
@@ -705,8 +692,6 @@ Future variants may use different signaling schemes, but the essential
 idea is stable: the machine must detect its state, communicate its
 need, and alter its behavior according to the availability of support.
 
-\subsubsection{The Transmitting Array (Queen)}
-
 The transmitting array names the infrastructure side of the choice
 problem. In the legacy apparatus it held the larger energetic reserve,
 interpreted requests from the field, and allocated power according
@@ -714,16 +699,12 @@ to explicit operating modes. In the current program, the same analytical
 role survives in more general form: some part of the system must regulate
 support rather than treat it as a constant background condition.
 
-\subsubsection{The Receiving Array (Drone)}
-
 The receiving array names the embodied side of the same problem. It
 experiences the field locally, stores or spends received power, and
 reports conditions that matter to continued operation. In the Volatco-centered
 program, these functions should increasingly migrate toward node-local
 state, local signaling, and observable recovery rather than remain
 attached to an older receiver architecture.
-
-\subsubsection{The Software Model}
 
 To engage the model, a feedback relationship is established between
 stored energy, observed load, and outgoing request signals. A sensor
@@ -734,8 +715,6 @@ to different operating modes. The details may evolve, but the design
 principle is consistent with the method of artificial systems: consequence
 must be encoded, transmitted, and acted upon in a way that remains
 inspectable.
-
-\subsubsection{The Experiment}
 
 The experiment should be understood as a staged validation program
 for the choice methodology rather than a single decisive demonstration.
@@ -753,8 +732,6 @@ The duration matters less than the sequence. Each stage should produce
 artifacts that can be repeated, criticized, and extended by later
 work.
 
-\subsubsection{The Hardware Experiment}
-
 The exact hardware can change across implementations, but three requirements
 remain fixed: the source must be stable enough to characterize, the
 system under test must be observable enough to debug, and the measurement
@@ -765,8 +742,6 @@ Initial trials can be performed at a modest fixed separation, followed
 by distance and orientation sweeps. All tests should preserve logs,
 photographs, and waveform captures so that the behavioral conclusions
 remain tied to physical evidence.
-
-\subsubsection{The Software Experiment}
 
 The software experiment begins with data organization. A machine that
 must preserve itself needs a usable memory of power states, requests,
@@ -782,8 +757,6 @@ where artificial life becomes more than control theory alone. The
 machine is not merely regulating voltage; it is organizing experience
 into future behavior.
 
-
-\subsubsection{Expected Outcomes}
 
 The most useful anticipated conclusion is modest and strong at the
 same time: artificial experience can be studied as the accumulation
@@ -801,8 +774,6 @@ usable knowledge quickly enough to alter action before failure occurs.
 The machine therefore requires a data management system, a control
 layer, and an environment in which better and worse decisions carry
 different consequences.
-
-\subsubsection{Further Experiments on Choice and Method}
 
 There are really two coupled experiments to consider: the energetic
 infrastructure that makes persistence measurable, and the embodied
@@ -830,8 +801,6 @@ idle and active conditions. Each of these tasks keeps the manifesto
 attached to observable architecture. Each asks whether behavior-defined
 asynchronous process with in-node memory words can be made explicit,
 measurable, and reproducible on the board.
-
-\subsection{Closing Remarks}
 
 The components presented here point toward a concrete research agenda:
 \begin{enumerate}
@@ -893,16 +862,12 @@ visible under controlled conditions.
 
 \section{Appendix: Volatco Experimental Program}
 
-\subsection{Purpose of the Appendix}
-
 This appendix is reserved for the current experimental substrate of
 the manifesto: the Volatco asynchronous computing platform. Its purpose
 is not to reopen older speculative roadmaps, replica schemes, or generalized
 design inventories. Its purpose is to show, as plainly as possible,
 how artificial life is embodied AI and how another researcher could
 reproduce or challenge that demonstration in laboratory conditions.
-
-\subsection{Why Volatco Belongs Here}
 
 The main body of this manuscript argues that artificial life in this
 research program should be treated as embodied AI with behavior-defined
@@ -918,8 +883,6 @@ the present demonstration substrate of the manifesto. If the manuscript
 is to stand as more than philosophical preference, it must end near
 the apparatus through which artificial life is embodied AI can actually
 be tested.
-
-\subsection{Experimental Commitments}
 
 The Volatco appendix should be read as a statement of experimental
 discipline. Any serious trial on the board should preserve at least
@@ -939,8 +902,6 @@ These are not procedural niceties. They are the minimum conditions
 under which a claim about embodied behavior can become reproducible
 rather than anecdotal.
 
-\subsection{Minimal Experiments}
-
 The first experiments need not be grand. They need to be decisive
 enough to show whether the architecture carries the behavior the manifesto
 assigns to it. A minimal sequence would include:
@@ -957,8 +918,6 @@ small enough to debug honestly. Together they test whether asynchronous
 local process, node-local memory, and explicit consequence can be
 made visible on the board.
 
-\subsection{What Counts as Evidence}
-
 For the purposes of this manifesto, evidence should be ordinary and
 inspectable. A valid experimental claim should be accompanied by saved
 source, initialization conditions, node assignments, timing records,
@@ -970,8 +929,6 @@ as evidence for artificial life.
 This standard is intentionally conservative. Its purpose is to give
 the field a repeatable path from conceptual claim to bounded technical
 result.
-
-\subsection{Scaling Path}
 
 If the minimal experiments succeed, the next step is not to jump immediately
 to anthropomorphic robotics. The next step is to scale the same discipline
