@@ -596,14 +596,15 @@ an experimental interface between architecture and adaptation.
 
 \end{figure}
 
-The waveforms in Figure 3 represent operational power states that
+The waveforms in the featured-power sketch represent operational power
+states that
 the machine can request or receive. Level A is full function, Level
 B is reduced activity, and Level C is a low-power or sleep condition.
 The specific values matter less than the architecture of the choice:
 the system is not simply on or off, but capable of moving among energy
 states with different behavioral consequences.
 
-For the device shown in Figure 3, these three modes can be treated
+For the device described here, these three modes can be treated
 as sleep, average, and high power, represented by C, B, and A respectively.
 At a given time, the machine should receive only the level of power
 necessary for its operation. For example, if a general-purpose robot
@@ -738,41 +739,12 @@ local consequence can be treated as one system-level problem. In that
 sense, it survives here as conceptual scaffolding rather than as the
 center of the experimental argument.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.9\linewidth]{figures/MIT-Witricity}
-
-\caption{The WiTricity (MIT) Transmission System}
-
-\end{figure}
-
 The design intention is straightforward: power a machine whose demands
 rise and fall with activity while preserving enough structure in the
 support channel to distinguish operating states. That general lesson
 still matters. The detailed legacy hardware, however, should now be
 read as exploratory work rather than as the main scientific instrument
 of this manuscript.
-
-The Model 'F' wireless power transmission system is illustrated in
-Figure 6:
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.9\linewidth]{figures/model-f}
-
-\caption{The Model 'F' Transmitter}
-
-\end{figure}
-
-Figure 7 shows the i-Cybie battery compartment with the card installed.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.82\linewidth]{figures/cybieInstalled}
-
-\caption{i-Cybie and Receiver Card}
-
-\end{figure}
 
 The historical experiments established a narrower lesson that remains
 useful: embodied power transfer is strongly shaped by geometry, confinement,
@@ -788,36 +760,10 @@ arrangement but the claim that an embodied power field can be treated
 as a structured operational volume. If a mobile system
 must persist inside a bounded region, then the design task is to describe
 that region in a way that supports measurement, prediction, and control.
-Figure 8 therefore stands as a schematic partition of transmission
-space into discrete units that can be sampled, modeled, and compared
-across different embodiments.
-
-\begin{figure}[H]
-\includegraphics[scale=0.5]{figures/area_transmitter/f2_files/1-7}
-
-\caption{Blocked Spaces}
-
-\end{figure}
-
-Within this space lie intersecting planes representing the dominant
-surfaces of energetic interaction:
-
-\begin{figure}[H]
-\includegraphics[scale=0.5]{figures/area_transmitter/f2_files/1-8}
-
-\caption{Transmission Planes}
-
-\end{figure}
-
-These planes intersect the geometric blocks according to the number
-and orientation of surfaces available to couple with the field.
-
-\begin{figure}[H]
-\includegraphics[scale=0.5]{figures/area_transmitter/f2_files/1-9}
-
-\caption{Container Slices}
-
-\end{figure}
+The legacy diagrams partitioned transmission space into discrete units
+that could be sampled, modeled, and compared across different embodiments.
+Their value was to make spatial coupling thinkable as an experimental
+variable rather than as an unexamined background condition.
 
 Each slice is organized by orientation to the planar axes. The purpose
 of the construction is to estimate how much usable interaction surface
@@ -899,13 +845,6 @@ research sequence, however, the more decisive template is the Volatco
 board environment, because it combines asynchronous node execution
 with explicit development and measurement hooks.
 
-\begin{figure}[H]
-\includegraphics[scale=0.5]{figures/area_transmitter/modelf_files/ExpID}
-
-\caption{F Experiments}
-
-\end{figure}
-
 For present purposes, the setup is best read as a legacy measurement
 template rather than as the main platform of the manuscript. The methodological
 requirements that survive into the board experiments are the following:
@@ -951,14 +890,6 @@ and sensor fusion before committing to a specific body. The exact software
 stack will change over time, but the principle remains: embodied intelligence
 benefits from a simulation layer in which sensing, actuation, timing,
 and environmental perturbation can be inspected under controlled conditions.
-Figure 20 illustrates such a workspace.
-
-\begin{figure}[H]
-\includegraphics[scale=0.5]{figures/ControlWindow}
-
-\caption{Simulation of Environment \& the Virtual Controller}
-
-\end{figure}
 
 In such an environment, a robot can be subjected to controlled gravity,
 lighting, friction, clutter, and timing conditions while its controllers
@@ -991,7 +922,7 @@ and consequence explicit enough to migrate into a more reproducible
 board-level setting.
 
 The immediate experimental objective is to distinguish operating regimes
-A, B, and C and their corresponding signaling forms L, V, and X.\footnote{Please refer to Figure 3.}
+A, B, and C and their corresponding signaling forms L, V, and X.
 The larger point is not the labels themselves, but the requirement
 that state, need, and response be made explicit enough to measure.
 Future variants may use different signaling schemes, but the essential
@@ -1051,13 +982,6 @@ work.
 The hardware experiment begins with a laboratory setup that preserves
 measurable coupling among support, local state, and observable response:
 
-\begin{figure}[H]
-\includegraphics[scale=0.5]{figures/TheHardwareExperiment}
-
-\caption{Choice Experimental Setup}
-
-\end{figure}
-
 The exact hardware can change across implementations, but three requirements
 remain fixed: the source must be stable enough to characterize, the
 system under test must be observable enough to debug, and the measurement
@@ -1114,16 +1038,8 @@ The domain consists of the following members:
 data sources such as a remote server or computing nexus.
 \end{itemize}
 A further breakdown of how each member fits into the composite schema
-can be seen in Figure 22. Whether the final implementation uses this
-exact arrangement is less important than the principle that governing
-relations remain explicit, inspectable, and extensible.
-
-\begin{figure}[H]
-\includegraphics[scale=0.5]{figures/governingEquation}
-
-\caption{Software Structured Choice and the Governing Equation (Concept)}
-
-\end{figure}
+is less important than the principle that governing relations remain
+explicit, inspectable, and extensible.
 
 
 \subsubsection{Expected Outcomes}
